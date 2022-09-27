@@ -18,6 +18,7 @@ export default function Navigation() {
         <div className="flex flex-col ml-8">
           <Item label="About" url="/about" />
           <Item label="Articles" url="/articles" />
+          <Item label="Photos" url="/photos" />
           <Item label="Projects" url="/projects" />
         </div>
       </div>
@@ -28,6 +29,7 @@ export default function Navigation() {
         <div className="flex flex-wrap justify-end space-x-4">
           <Item label="About" url="/about" />
           <Item label="Articles" url="/articles" />
+          <Item label="Photos" url="/photos" />
           <Item label="Projects" url="/projects" />
         </div>
       </div>

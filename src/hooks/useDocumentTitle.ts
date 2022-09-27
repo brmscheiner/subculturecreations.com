@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const siteName = 'subculture';
+const siteName = 'subculture creations';
 
 export default function useDocumentTitle(
   title: string,
