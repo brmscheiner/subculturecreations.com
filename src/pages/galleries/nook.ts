@@ -1,4 +1,5 @@
 
+import GluePhoto from './nook/glueup.jpeg';
 import NookPhoto from './nook/nook.jpeg';
 import TablePhoto from './nook/table.jpeg';
 
@@ -11,10 +12,16 @@ const exemplar = {
 
 const images = [
   {
+    src: GluePhoto,
+    width: 1512,
+    height: 2016,
+    alt: 'Panel after glue-up and planing',
+  },
+  {
     src: TablePhoto,
     width: 1512,
     height: 2016,
-    alt: 'New table in the garage',
+    alt: 'Table after rounding off and applying wax',
   },
   exemplar,
 ]

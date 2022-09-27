@@ -3,12 +3,13 @@ import B1 from './boards/b1.jpeg';
 import B2 from './boards/b2.jpeg';
 import B3 from './boards/b3.jpeg';
 import AllBoards from './boards/all_boards.jpeg';
+import Exemplar from './boards/boards_landscape.jpeg';
 
 const exemplar = {
-  src: AllBoards,
+  src: Exemplar,
   width: 1512,
   height: 2016,
-  alt: 'A collection of handmade cutting boards',
+  alt: 'A collection of 5 handmade charcuterie boards',
 }
 
 const images = [
@@ -16,21 +17,26 @@ const images = [
     src: B1,
     width: 1512,
     height: 2016,
-    alt: 'New table in the garage',
+    alt: 'A rectangular charcuterie board made of walnut',
   },
   {
     src: B2,
     width: 1512,
     height: 2016,
-    alt: 'New table in the garage',
+    alt: 'A curvaceous charcuterie board made of walnut',
   },
   {
     src: B3,
     width: 1512,
     height: 2016,
-    alt: 'New table in the garage',
+    alt: 'A charcuterie board in the shape of a whale',
   },
-  exemplar,
+  {
+    src: AllBoards,
+    width: 1512,
+    height: 2016,
+    alt: 'A collection of 5 handmade charcuterie boards',
+  },
 ]
 
 const boardsConfig = {
