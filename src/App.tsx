@@ -25,7 +25,7 @@ const router = createBrowserRouter([
   ...galleryRoutes,
   {
     path: routes.home,
-    element: <Projects />,
+    element: <Galleries />,
     errorElement: <Error />,
   },
   {
