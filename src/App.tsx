@@ -6,7 +6,7 @@ import {
 
 import './App.css';
 import Navigation from './components/Navigation';
-import Articles from './pages/Articles';
+// import Articles from './pages/Articles';
 import Projects from './pages/Projects';
 import Galleries from './pages/galleries/Galleries';
 import About from './pages/About';

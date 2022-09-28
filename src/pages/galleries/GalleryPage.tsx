@@ -1,5 +1,6 @@
 import React from 'react';
-import { Gallery as GridGallery } from 'react-grid-gallery';
+import 'photoswipe/dist/photoswipe.css'
+import { Gallery as GridGallery, Item } from 'react-photoswipe-gallery'
 
 import { routes } from '../../constants/routes';
 import { ButtonLink } from '../../components/Button';
@@ -14,7 +15,16 @@ export default function GalleryPage(props: { data: Gallery }) {
       <ButtonLink href={routes.galleries} label="Back to photos" />
       <h1 className="mt-2 text-4xl">{data.title}</h1>
       <div className="my-3 max-w-3xl">{typeof data.description === 'string' ? <p>{data.description}</p> : data.description}</div>
-      <GridGallery images={data.images} enableImageSelection={false} rowHeight={420} />
+      <GridGallery id={data.path} withCaption>
+        {data.images.map(image => (
+          <Item original={image.src} thumbnail={image.src} width={image.width} height={image.height} caption={image.alt}>
+            {({ ref, open }) => (
+              /* @ts-expect-error */
+              <img ref={ref} onClick={open} src={image.src} alt={image.alt} />
+            )}
+          </Item>
+        ))}
+      </GridGallery>
       <ButtonLink href={routes.galleries} label="Back to photos" />
     </div>
   )
