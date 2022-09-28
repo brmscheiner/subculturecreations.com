@@ -19,7 +19,7 @@ export default function About() {
   useDocumentTitle('About', true);
   return (
     <Card>
-      <p className="mb-6">Ben is a frontend developer based in Portland, Oregon. In 2022, he purchased <span className={clickableText}>subculturecreations.com</span> because <span className={clickableText}>benscheiner.com</span> was taken and <span className={clickableText}>ben.com</span> was very expensive. He wanted a place on the internet to call his own, where he could ramble freely and put his creations on display.</p>
+      <p className="mb-6">Ben is a frontend developer based in Portland, Oregon. In 2022, he purchased this domain because <span className={clickableText}>benscheiner.com</span> was taken and <span className={clickableText}>ben.com</span> was very expensive. He wanted a place on the internet to call his own, where he could ramble freely and put his creations on display.</p>
 
       <Accordion title="Skills">
         <p>
@@ -50,7 +50,7 @@ export default function About() {
           - Data visualization 
         </p>
         <p className="mb-2">
-          - UX design work
+          - Design work
         </p>
       </Accordion>
       <Accordion title="Contact">

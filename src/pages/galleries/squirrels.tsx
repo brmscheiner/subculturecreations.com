@@ -135,8 +135,20 @@ const boardsConfig = {
   exemplar,
   path: 'squirrels',
   title: 'Inviting squirrels into your home',
-  subtitle: "Meet Squiggles and Penelope.",
-  description: 'One day I was out walking Cricket and we noticed a squirrel following us. He followed us over a block.'
+  subtitle: "Meet Squiggles and Penelope",
+  description: (
+    <>
+      <p>
+        One day I was out for a walk and a squirrel started to follow me. He was persistent enough to follow me for at least two blocks and even cross the street. A cat noticed his strange behavior and attacked him. I shooed the cat away and took the squirrel home in a shoebox.
+      </p>
+      <p className="mt-3">
+        I named him Squiggles. After doing some research I took Squiggles to The Squirrel Refuge, a local non-profit that helps squirrels with troubled pasts. They offered to take him in, but gave me the option to start his rehabilitation myself. But apparently, if squirrels grow up alone they never learn to socialize and will ultimately get rejected by the pack.
+      </p>
+      <p className="mt-3">
+        So I came home with a cage, food, blankets and two squirrels. I named our new squirrel Penelope. Colleen and I bottle fed the squirrels for a few months, watching them develop and grow. Once they reached their target weights, I returned them to the refuge for the next chapter of their adventure.
+      </p>
+    </>
+  )
 }
 
 export default boardsConfig;

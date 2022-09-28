@@ -13,7 +13,7 @@ export default function GalleryPage(props: { data: Gallery }) {
     <div className="xl:ml-72 p-4 w-5xl">
       <ButtonLink href={routes.galleries} label="Back to photos" />
       <h1 className="mt-2 text-4xl">{data.title}</h1>
-      <p className="my-3 max-w-3xl">{data.description}</p>
+      <div className="my-3 max-w-3xl">{typeof data.description === 'string' ? <p>{data.description}</p> : data.description}</div>
       <GridGallery images={data.images} enableImageSelection={false} rowHeight={420} />
       <ButtonLink href={routes.galleries} label="Back to photos" />
     </div>

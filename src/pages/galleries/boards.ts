@@ -43,9 +43,9 @@ const boardsConfig = {
   images,
   exemplar,
   path: 'boards',
-  title: 'Christmas boards',
-  subtitle: 'I made a few cutting boards to give out as Christmas gifts.',
-  description: 'These boards are good baords'
+  title: 'Charcuterie boards',
+  subtitle: 'I made some charcuterie boards from black walnut',
+  description: 'These boards were fun to make and wound up being great Christmas presents. The bird was certainly the most challenging. Next time I might try to make a seal or a snake.'
 }
 
 export default boardsConfig;

@@ -25,7 +25,7 @@ const router = createBrowserRouter([
   ...galleryRoutes,
   {
     path: routes.home,
-    element: <Galleries />,
+    element: <About />,
     errorElement: <Error />,
   },
   {
@@ -33,11 +33,11 @@ const router = createBrowserRouter([
     element: <Galleries />,
     errorElement: <Error />,
   },
-  {
-    path: routes.articles,
-    element: <Articles />,
-    errorElement: <Error />,
-  },
+  // {
+  //   path: routes.articles,
+  //   element: <Articles />,
+  //   errorElement: <Error />,
+  // },
   {
     path: routes.projects,
     element: <Projects />,
@@ -50,7 +50,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/*',
-    element: <Error title="Page not found" message="The page you are looking for may have been moved or removed." />
+    element: <Error title="Page not found" message="The page you are looking for may have been moved or removed" />
   }
 ])
 

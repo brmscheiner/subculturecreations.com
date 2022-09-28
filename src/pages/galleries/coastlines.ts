@@ -83,8 +83,8 @@ const galleryConfig = {
   },
   path: 'coastlines',
   title: 'Coastlines',
-  subtitle: 'A series of black and white photos taken on the Oregon coast.',
-  description: 'I love spending time on the coast observing all of the different textures formed in the sand. Erosion comes from so many different forces - lapping waves, harsh wind, heavy rain, tributaries flowing out to sea... Often the most interesting patterns are formed where these forces intersect. I used high-contrast, black and white filters to magnify the patterns I observed.'
+  subtitle: 'A series of black and white photos taken on the Oregon coast',
+  description: 'I love spending time on the coast and seeing all of the different patterns that form in the sand. So many things cause erosion - waves, wind, raindrops, rivers... Often the most interesting patterns emerge in places where these forces intersect.'
 }
 
 export default galleryConfig;

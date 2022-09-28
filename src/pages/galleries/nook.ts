@@ -30,9 +30,9 @@ const nookConfig = {
   images,
   exemplar,
   path: 'nook',
-  title: 'DIY Nook',
-  subtitle: 'I made a teak table and cut an old church pew in half to create a breakfast nook.',
-  description: 'My first table! I finished the teak with Osmo wood wax and used biscuits to join up the planks. The benches were simple, just a church pew cut in half, but after buying the pew I realized it only had 3 legs! So I had to construct a fourth leg.'
+  title: 'My first table',
+  subtitle: 'Our DIY breakfast nook',
+  description: 'After moving in to our new house, we decided to build a breakfast nook. I found a church pew on Craigslist and cut it in half to make the benches. The pew only had 3 legs so I had to create a fourth. Then, I built this table from teak boards. I joined the planks with biscuits, ran the table through a planer, cut the curve and finished it with Osmo wood wax.'
 }
 
 export default nookConfig;

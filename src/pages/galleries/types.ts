@@ -1,3 +1,4 @@
+import React from "react";
 
 export interface Image {
   src: string,
@@ -12,5 +13,5 @@ export interface Gallery {
   path: string,
   title: string,
   subtitle?: string,
-  description: string,
+  description: React.ReactNode,
 }
