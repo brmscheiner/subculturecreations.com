@@ -1,4 +1,5 @@
 import React from "react";
+import { GalleryImage } from '../../constants/galleryImages';
 
 export interface Image {
   src: string,
@@ -8,8 +9,8 @@ export interface Image {
 }
 
 export interface Gallery {
-  images: Image[],
-  exemplar: Image,
+  images: GalleryImage[],
+  exemplar: GalleryImage,
   path: string,
   title: string,
   subtitle?: string,

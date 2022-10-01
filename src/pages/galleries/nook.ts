@@ -1,26 +1,17 @@
-
-import GluePhoto from './nook/glueup.jpeg';
-import NookPhoto from './nook/nook.jpeg';
-import TablePhoto from './nook/table.jpeg';
+import { galleryImages } from '../../constants/galleryImages';
 
 const exemplar = {
-  src: NookPhoto,
-  width: 1512,
-  height: 2016,
+  ...galleryImages['nook3.jpeg'],
   alt: 'Finished nook',
 }
 
 const images = [
   {
-    src: GluePhoto,
-    width: 1512,
-    height: 2016,
+    ...galleryImages['nook1.jpeg'],
     alt: 'Panel after glue-up and planing',
   },
   {
-    src: TablePhoto,
-    width: 1512,
-    height: 2016,
+    ...galleryImages['nook2.jpeg'],
     alt: 'Table after rounding off and applying wax',
   },
   exemplar,

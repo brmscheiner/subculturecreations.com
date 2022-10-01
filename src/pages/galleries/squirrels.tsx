@@ -1,131 +1,77 @@
-
-import photo1 from './squirrels/1.jpeg';
-import photo2 from './squirrels/2.jpeg';
-import photo3 from './squirrels/3.jpeg';
-import photo4 from './squirrels/4.jpeg';
-import photo5 from './squirrels/5.jpeg';
-import photo6 from './squirrels/6.jpeg';
-import photo7 from './squirrels/7.jpeg';
-import photo8 from './squirrels/8.jpeg';
-import photo9 from './squirrels/9.jpeg';
-import photo10 from './squirrels/10.jpeg';
-import photo11 from './squirrels/11.jpg';
-import photo12 from './squirrels/12.jpeg';
-import photo13 from './squirrels/13.jpeg';
-import photo14 from './squirrels/14.jpg';
-import photo15 from './squirrels/15.jpeg';
-import photo16 from './squirrels/16.jpeg';
-import photo17 from './squirrels/17.jpeg';
-import Landscape from './squirrels/landscape.jpeg';
+import { galleryImages } from '../../constants/galleryImages';
 
 const exemplar = {
-  src: Landscape,
-  width: 1512,
-  height: 2016,
+  ...galleryImages['squirrelsLandscape.jpeg'],
   alt: 'Penelope and Squiggles sitting on a fleece blanket',
 }
 
 const images = [
   {
-    src: photo1,
-    width: 1512,
-    height: 2016,
+    ...galleryImages['squirrels1.jpeg'],
     alt: "Squiggles clinging to Ben's arm",
   },
   {
-    src: photo2,
-    width: 1512,
-    height: 2016,
+    ...galleryImages['squirrels2.jpeg'],
     alt: "Squiggles nibbling on Ben's finger",
   },
   {
-    src: photo3,
-    width: 1512,
-    height: 2016,
+    ...galleryImages['squirrels3.jpeg'],
     alt: 'Squiggles in a shoe box full of towels and food',
   },
   {
-    src: photo4,
-    width: 1512,
-    height: 2016,
+    ...galleryImages['squirrels4.jpeg'],
     alt: "Squiggles in the palm of Ben's hand",
   },
   {
-    src: photo5,
-    width: 1512,
-    height: 2016,
+    ...galleryImages['squirrels5.jpeg'],
     alt: "Cricket's reaction to Squiggles in the house",
   },
   {
-    src: photo6,
-    width: 1512,
-    height: 2016,
+    ...galleryImages['squirrels6.jpeg'],
     alt: 'Squiggles drinking milk',
   },
   {
-    src: photo7,
-    width: 1512,
-    height: 2016,
+    ...galleryImages['squirrels7.jpeg'],
     alt: 'Colleen with Squiggles on her shoulder',
   },
   {
-    src: photo8,
-    width: 1512,
-    height: 2016,
+    ...galleryImages['squirrels8.jpeg'],
     alt: 'Squiggles on a fleece blanket',
   },
   {
-    src: photo9,
-    width: 1512,
-    height: 2016,
+    ...galleryImages['squirrels9.jpeg'],
     alt: 'Philae meets Squiggles',
   },
   {
-    src: photo10,
-    width: 1512,
-    height: 2016,
+    ...galleryImages['squirrels10.jpeg'],
     alt: 'Ben with Squiggles on his shoulder',
   },
   {
-    src: photo11,
-    width: 1512,
-    height: 2016,
+    ...galleryImages['squirrels11.jpg'],
     alt: 'Ben with Squiggles on his shoulder',
   },
   {
-    src: photo13,
-    width: 1512,
-    height: 2016,
+    ...galleryImages['squirrels13.jpeg'],
     alt: 'Penelope and Squiggles on a fleece blanket',
   },
   {
-    src: photo14,
-    width: 1512,
-    height: 2016,
+    ...galleryImages['squirrels14.jpg'],
     alt: 'Penelope curled up in a ball',
   },
   {
-    src: photo15,
-    width: 1512,
-    height: 2016,
+    ...galleryImages['squirrels15.jpeg'],
     alt: 'Penelope stretching',
   },
   {
-    src: photo12,
-    width: 1512,
-    height: 2016,
+    ...galleryImages['squirrels12.jpeg'],
     alt: 'Squiggles stares into the camera',
   },
   {
-    src: photo16,
-    width: 1512,
-    height: 2016,
+    ...galleryImages['squirrels16.jpeg'],
     alt: 'Squiggles eating a block',
   },
   {
-    src: photo17,
-    width: 1512,
-    height: 2016,
+    ...galleryImages['squirrels17.jpeg'],
     alt: 'Penelope playing the garage',
   },
 ]
