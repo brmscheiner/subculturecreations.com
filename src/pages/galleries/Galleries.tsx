@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { routes } from '../../constants/routes';
+import Page from '../../components/Page';
 import Card from '../../components/Card';
 import { ButtonLink, ButtonColors } from '../../components/Button';
 import ContainedImage from '../../components/ContainedImage';
-import useDocumentTitle from '../../hooks/useDocumentTitle';
 import coastlines from './coastlines';
 import nook from './nook';
 import boards from './boards';
@@ -34,12 +34,11 @@ function GalleryStub(props: Gallery) {
 }
 
 export default function Photos() {
-  useDocumentTitle('Photos', true);
   return (
-    <>
+    <Page title="Photos">
       {galleries.map(gallery => (
         <GalleryStub key={gallery.path} {...gallery} />
       ))}
-    </>
+    </Page>
   )
 }

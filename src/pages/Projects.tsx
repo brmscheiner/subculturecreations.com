@@ -1,5 +1,5 @@
 import React from 'react';
-import useDocumentTitle from '../hooks/useDocumentTitle';
+import Page from '../components/Page';
 import Project from '../components/Project';
 
 const data = [
@@ -21,12 +21,11 @@ const data = [
 ]
 
 export default function Projects() {
-  useDocumentTitle('Projects', true);
   return (
-    <>
+    <Page title="Projects">
       {data.map(datum => (
         <Project key={datum.title} {...datum} />
       ))}
-    </>
+    </Page>
   )
 }

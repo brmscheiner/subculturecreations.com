@@ -5,7 +5,6 @@ import {
 } from 'react-router-dom';
 
 import './App.css';
-import Navigation from './components/Navigation';
 // import Articles from './pages/Articles';
 import Projects from './pages/Projects';
 import Galleries from './pages/galleries/Galleries';
@@ -56,10 +55,7 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div className="font-mono mb-40">
-      <Navigation />
-      <RouterProvider router={router} />
-    </div>
+    <RouterProvider router={router} />
   );
 }
 
