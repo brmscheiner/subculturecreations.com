@@ -5,7 +5,7 @@ import Project from '../components/Project';
 const data = [
   {
     title: 'Subculture Creations',
-    repoUrl: 'https://github.com/brmscheiner/supplecreations.com',
+    repoUrl: 'https://github.com/brmscheiner/subculturecreations.com',
     content: 'The code for this very website. I used Typescript, React, Tailwind, and Netlify.'
   },
   {
