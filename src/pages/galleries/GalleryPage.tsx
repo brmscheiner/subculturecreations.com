@@ -4,6 +4,7 @@ import { Gallery as GridGallery, Item } from 'react-photoswipe-gallery'
 
 import { routes } from '../../constants/routes';
 import { ButtonLink, ButtonColors } from '../../components/Button';
+import ContainedImage from '../../components/ContainedImage';
 import Page from '../../components/Page';
 import { Gallery } from './types';
 
@@ -26,11 +27,12 @@ export default function GalleryPage(props: { data: Gallery }) {
                 caption={image.alt}
               >
                 {({ ref, open }) => (
-                  <img
+                  <ContainedImage
                     ref={ref as React.MutableRefObject<HTMLImageElement>}
-                    className="cursor-pointer"
                     onClick={open}
                     src={image.paths.small}
+                    width={image.sizes.small.width}
+                    height={image.sizes.small.height}
                     alt={image.alt}
                   />
                 )}

@@ -20,7 +20,7 @@ function GalleryStub(props: Gallery) {
     <Card>
     <p className="text-2xl mb-0.5">{title}</p>
     <ContainedImage
-      // stretch
+      stretch
       href={href}
       src={exemplar.paths.medium}
       alt={exemplar.alt}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { LegacyRef, useCallback, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 interface ContainedImageProps {
@@ -8,25 +8,41 @@ interface ContainedImageProps {
   stretch?: boolean,
   href?: string,
   alt?: string,
+  ref?: React.MutableRefObject<HTMLImageElement>,
+  onClick?: (e: any) => void,
 }
 
-function Image(props: { src: string, alt?: string }) {
-  return <img src={props.src} alt={props.alt} />
-}
+const ContainedImage = React.forwardRef((props: ContainedImageProps, ref: LegacyRef<HTMLImageElement>) => {
+  const { width, height, stretch, src, alt, href, onClick } = props;
+  const [loading, setLoading] = useState(true);
+  const handleLoad = useCallback(() => setLoading(false), []);
 
-export default function ContainedImage(props: ContainedImageProps) {
   const dimensionStyles = {
-    maxWidth: props.stretch ? '100%' : props.width,
-    maxHeight: props.height,
+    width: stretch ? '100%' : width,
+    height: stretch ? 'unset' : height,
+    aspectRatio: stretch ? width / height : 'unset',
   }
 
-  if (props.href) {
-    return <Link to={props.href} style={dimensionStyles}>
-      <Image src={props.src} alt={props.alt} />
+  const classes = loading ? 'loading-gradient' : '';
+
+  const imageProps = {
+    onLoad: handleLoad,
+    src,
+    ref,
+    onClick,
+  }
+
+  if (href) {
+    return <Link to={href} className="cursor-pointer">
+      <div style={dimensionStyles} className={classes}>
+        <img {...imageProps} alt={alt} />
+      </div>
     </Link>
   }
 
-  return <div style={dimensionStyles}>
-    <Image src={props.src} alt={props.alt} />
+  return <div style={dimensionStyles} className={`${classes} cursor-pointer`}>
+    <img {...imageProps} alt={alt} />
   </div>
-}
+})
+
+export default ContainedImage;
