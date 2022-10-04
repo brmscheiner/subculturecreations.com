@@ -4,13 +4,20 @@ import Accordion from '../components/Accordion';
 import Page from '../components/Page';
 import Card from '../components/Card';
 import Link from '../components/Link';
+import CopyText from '../components/CopyText';
 import { clickableText } from '../constants/compositeStyles';
 
-function Referral(props: { url: string, label: string }) {
-  const { url, label } = props;
+function Referral(props: { url: string, label: string, copyable?: boolean }) {
+  const { url, label, copyable } = props;
   return (
     <p className="mb-1">
-      <Link external href={url} label={label} />
+      {copyable ? (
+        <CopyText value={label}>
+          <Link external href={url} label={label} />
+        </CopyText>
+      ) : (
+        <Link external href={url} label={label} />
+      )}
     </p>
   )
 }
@@ -56,7 +63,7 @@ export default function About() {
         <Accordion title="Contact">
           <Referral url="https://github.com/brmscheiner" label="Github" />
           <Referral url="https://www.linkedin.com/in/brmscheiner/" label="LinkedIn" />
-          <Referral url="mailto:brmscheiner@gmail.com" label="brmscheiner@gmail.com" />
+          <Referral url="mailto:brmscheiner@gmail.com" label="brmscheiner@gmail.com" copyable />
         </Accordion>
       </Card>
     </Page>
