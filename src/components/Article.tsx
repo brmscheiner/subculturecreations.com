@@ -1,7 +1,11 @@
-import React from 'react';
-import Card from './Card';
+import React from "react";
+import Card from "./Card";
 
-export default function Article(props: { title: string, subtitle?: string, content: string }) {
+export default function Article(props: {
+  title: string;
+  subtitle?: string;
+  content: string;
+}) {
   const { title, subtitle, content } = props;
   return (
     <Card>
@@ -9,5 +13,5 @@ export default function Article(props: { title: string, subtitle?: string, conte
       {subtitle && <p className="text-sm text-slate-600">{subtitle}</p>}
       <p className="mt-2">{content}</p>
     </Card>
-  )
+  );
 }

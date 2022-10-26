@@ -1,30 +1,30 @@
-import mapValues from 'lodash/mapValues';
+import mapValues from "lodash/mapValues";
 
-import imageMetadata from '../imageMetadata.json';
+import imageMetadata from "../imageMetadata.json";
 
 interface Dimensions {
-  width: number,
-  height: number,
+  width: number;
+  height: number;
 }
 
 interface Paths {
-  medium: string,
-  original: string,
-  small: string,
+  medium: string;
+  original: string;
+  small: string;
 }
 
 interface Sizes {
-  medium: Dimensions,
-  original: Dimensions,
-  small: Dimensions,
+  medium: Dimensions;
+  original: Dimensions;
+  small: Dimensions;
 }
 
 export interface GalleryImage {
-  filename: string,
-  format: string,
-  paths: Paths,
-  sizes: Sizes,
-  alt?: string,
+  filename: string;
+  format: string;
+  paths: Paths;
+  sizes: Sizes;
+  alt?: string;
 }
 
 export const galleryImages = mapValues(imageMetadata, (d): GalleryImage => {
@@ -34,6 +34,6 @@ export const galleryImages = mapValues(imageMetadata, (d): GalleryImage => {
       original: require(`../assets/galleries/originals/${d.filename}`),
       medium: require(`../assets/galleries/medium/${d.filename}`),
       small: require(`../assets/galleries/small/${d.filename}`),
-    }
-  }
-})
+    },
+  };
+});

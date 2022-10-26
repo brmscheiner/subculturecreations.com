@@ -1,19 +1,16 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
-const siteName = 'subculture creations';
+const siteName = "subculture creations";
 
 export default function useDocumentTitle(
   title: string,
-  appendSitename: boolean,
+  appendSitename: boolean
 ): void {
-  useEffect(
-    () => {
-      if (appendSitename && siteName) {
-        document.title = `${title} | ${siteName}`;
-      } else {
-        document.title = title;
-      }
-    },
-    [title, appendSitename],
-  );
+  useEffect(() => {
+    if (appendSitename && siteName) {
+      document.title = `${title} | ${siteName}`;
+    } else {
+      document.title = title;
+    }
+  }, [title, appendSitename]);
 }

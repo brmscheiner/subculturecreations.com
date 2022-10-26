@@ -1,24 +1,21 @@
-import React from 'react';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from 'react-router-dom';
+import React from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import './App.css';
+import "./App.css";
 // import Articles from './pages/Articles';
-import Projects from './pages/Projects';
-import Galleries from './pages/galleries/Galleries';
-import About from './pages/About';
-import Error from './pages/Error';
-import { routes } from './constants/routes';
-import { galleries } from './pages/galleries/Galleries';
-import GalleryPage from './pages/galleries/GalleryPage';
+import Projects from "./pages/Projects";
+import Galleries from "./pages/galleries/Galleries";
+import About from "./pages/About";
+import Error from "./pages/Error";
+import { routes } from "./constants/routes";
+import { galleries } from "./pages/galleries/Galleries";
+import GalleryPage from "./pages/galleries/GalleryPage";
 
-const galleryRoutes = galleries.map(g => ({
+const galleryRoutes = galleries.map((g) => ({
   path: `${routes.galleries}/${g.path}`,
   element: <GalleryPage data={g} />,
   errorElement: <Error />,
-}))
+}));
 
 const router = createBrowserRouter([
   ...galleryRoutes,
@@ -48,15 +45,18 @@ const router = createBrowserRouter([
     errorElement: <Error />,
   },
   {
-    path: '/*',
-    element: <Error title="Page not found" message="The page you are looking for may have been moved or removed" />
-  }
-])
+    path: "/*",
+    element: (
+      <Error
+        title="Page not found"
+        message="The page you are looking for may have been moved or removed"
+      />
+    ),
+  },
+]);
 
 function App() {
-  return (
-    <RouterProvider router={router} />
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

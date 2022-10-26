@@ -1,12 +1,17 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import logo from '../assets/logo.svg';
+import React from "react";
+import { Link } from "react-router-dom";
+import logo from "../assets/logo.svg";
 
-function Item(props: { label: string, url: string }) {
+function Item(props: { label: string; url: string }) {
   const { label, url } = props;
   return (
-    <Link to={url} className="text-base font-medium text-gray-900 hover:text-gray-700">{label}</Link>
-  )
+    <Link
+      to={url}
+      className="text-base font-medium text-gray-900 hover:text-gray-700"
+    >
+      {label}
+    </Link>
+  );
 }
 
 export default function Navigation() {
@@ -35,5 +40,5 @@ export default function Navigation() {
         </div>
       </div>
     </div>
-  )
+  );
 }
