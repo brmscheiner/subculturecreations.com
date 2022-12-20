@@ -6,20 +6,30 @@ const data = [
   {
     title: "Subculture Creations",
     repoUrl: "https://github.com/brmscheiner/subculturecreations.com",
+    date: "2022+",
     content:
-      "The code for this very website. I used Typescript, React, Tailwind, and Netlify.",
+      "The code for this very website. The stack: Typescript, React, Tailwind, and Netlify.",
   },
   {
     title: "Codex",
     repoUrl: "https://github.com/wildmeorg/codex-frontend",
+    date: "2020-2022",
     content:
-      "An open source platform for conservation research. I worked on the design and development of the UI from 2020 to late 2022.",
+      "An open source platform for conservation research. I worked on the design and development of the UI, first independently and later leading a small team.",
+  },
+  {
+    title: "UniFi Network",
+    infoUrl: "https://www.ui.com/wi-fi",
+    date: "2019-2020",
+    content:
+      "A web app used to configure WiFi networks. The app has millions of users and features many animations and visualizations.",
   },
   {
     title: "MP Studio",
     infoUrl: "https://motorizedprecision.com/mp-studio/",
+    date: "2017-2018",
     content:
-      "An Electron app used to control the motion of robot arms for use in commercials and movies. I worked on this application in 2017 and 2018.",
+      "An Electron app used to control the motion of robotic arms for use in commercials and movies.",
   },
 ];
 

@@ -4,16 +4,23 @@ import { ButtonLink, ButtonColors } from "./Button";
 
 export default function Project(props: {
   title: string;
+  date?: string;
   repoUrl?: string;
   infoUrl?: string;
   content: string;
 }) {
-  const { title, repoUrl, infoUrl, content } = props;
+  const { title, date, repoUrl, infoUrl, content } = props;
   return (
     <Card>
-      <p className="text-2xl mb-0.5" style={{ overflowWrap: "anywhere" }}>
-        {title}
-      </p>
+      <div className="flex flex-wrap justify-between items-end">
+       <p className="text-2xl mb-0.5" style={{ overflowWrap: "anywhere" }}>
+          {title}
+        </p>
+        <div>
+          {date}
+        </div>
+      </div>
+
       {repoUrl && (
         <ButtonLink
           external
