@@ -48,7 +48,7 @@ export default function GalleryPage(props: { data: Gallery }) {
         </GridGallery>
         <ButtonLink
           color={ButtonColors.Black}
-          href={routes.galleries}
+          href={`/${routes.galleries}`}
           label="Back to all photos"
         />
       </div>

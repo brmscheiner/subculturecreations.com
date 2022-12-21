@@ -43,8 +43,8 @@ async function resizePhotos() {
         ? { width: resize.maxPixels }
         : { height: resize.maxPixels };
       const generatedImage = await image
+        .rotate()
         .resize(target)
-        .withMetadata()
         .toFile(`${resize.dist}/${filename}`);
       const prevSizes = outputFiles?.[filename]?.sizes || {};
       outputFiles[filename] = {
