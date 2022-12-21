@@ -3,7 +3,6 @@ import Page from "../components/Page";
 import Card from "../components/Card";
 import Link from "../components/Link";
 import CopyText from "../components/CopyText";
-import { clickableText } from "../constants/compositeStyles";
 
 function Referral(props: { url: string; label: string; copyable?: boolean }) {
   const { url, label, copyable } = props;
