@@ -1,10 +1,9 @@
-import React from "react";
 import { CricketGradient, cricketGradientId } from './Cricket';
 import { Link } from "react-router-dom";
 
-function modNumber(original: number, scroll: number) {
-  return (original + scroll) % 255
-}
+// function modNumber(original: number, scroll: number) {
+//   return (original + scroll) % 255
+// }
 
 function Room(props: { scroll: number }) {
   return (

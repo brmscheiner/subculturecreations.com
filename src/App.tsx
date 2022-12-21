@@ -1,4 +1,4 @@
-import { createBrowserRouter, Outlet, RouterProvider, ScrollRestoration, useLocation } from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider, ScrollRestoration } from "react-router-dom";
 
 import "./App.css";
 // import Articles from './pages/Articles';
