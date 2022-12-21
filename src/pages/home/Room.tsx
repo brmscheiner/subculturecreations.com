@@ -1,5 +1,6 @@
 import React from "react";
 import { CricketGradient, cricketGradientId } from './Cricket';
+import { Link } from "react-router-dom";
 
 function modNumber(original: number, scroll: number) {
   return (original + scroll) % 255
@@ -55,11 +56,10 @@ function Room(props: { scroll: number }) {
           stroke="#000"
           d="M1072 752h-10V600l10-10m0 162V590m0 162l14-14V575.5l-14 14.5"
         ></path>
-        <g onClick={() => {
-          console.log('hi')
-        }}>
+        <Link to="/photos">
           <path fill="#000" d="M1234 184H1510V696H1234z"></path>
-        </g>
+          <text fill="#fff" x="1339" y="430" style={{ fontFamily: 'ui-monospace'}}>ENTER</text>
+        </Link>
         <path fill="#fff" d="M832.5 94.5H1101.5V335.5H832.5z"></path>
         <path fill="#000" d="M832.5 94.5H1101.5V335.5H832.5z"></path>
         <path stroke="#000" d="M832.5 94.5H1101.5V335.5H832.5z"></path>

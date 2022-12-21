@@ -17,7 +17,7 @@ export default function Accordion(props: {
         <h4 className="font-bold select-none">{title}</h4>
         {open ? <ChevronDown /> : <ChevronUp />}
       </div>
-      <div className={`${open ? "block" : "hidden"} p-2`}>{children}</div>
+      <div className={`${open ? "block" : "hidden"} p-2 mt-1`}>{children}</div>
     </div>
   );
 }

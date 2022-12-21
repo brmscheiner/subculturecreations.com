@@ -1,5 +1,3 @@
-import React from "react";
-
 import Accordion from "../components/Accordion";
 import Page from "../components/Page";
 import Card from "../components/Card";
@@ -45,10 +43,9 @@ export default function About() {
     <Page title="About">
       <Card>
         <p className="mb-6">
-          Ben is a frontend developer based in Portland, Oregon. In 2022, he
+          Ben is a frontend developer and UX designer based in Portland, Oregon. In 2022, he
           purchased this domain because{" "}
-          <span className={clickableText}>benscheiner.com</span> was taken and{" "}
-          <span className={clickableText}>ben.com</span> was very expensive. He
+          <Link external href="https://www.benscheiner.com/" label="benscheiner.com" /> was taken by a different Ben who admittedly seems like a pretty cool guy. This Ben
           wanted a place on the internet to call his own, where he could ramble
           freely and put his creations on display.
         </p>
@@ -58,10 +55,10 @@ export default function About() {
             title="Experience"
             items={[
               {
-                text: "6 years of frontend development",
+                text: "7 years of frontend development",
               },
               {
-                text: "2 years of UX design",
+                text: "3 years of UX design",
               },
               {
                 text: "2 years of data analysis",
@@ -116,10 +113,10 @@ export default function About() {
                 text: "Working with non-profits, B Corps and local businesses",
               },
               {
-                text: "Data visualization",
+                text: "More design work!",
               },
               {
-                text: "Design work",
+                text: "Data visualization",
               },
             ]}
           />

@@ -1,6 +1,5 @@
 import React from "react";
 
-import { routes } from "../../constants/routes";
 import Page from "../../components/Page";
 import Card from "../../components/Card";
 import { ButtonLink, ButtonColors } from "../../components/Button";
