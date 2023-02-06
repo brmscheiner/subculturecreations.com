@@ -17,7 +17,7 @@ function Item(props: { label: string; url: string }) {
 export default function Navigation() {
   return (
     <div>
-      <div className="hidden xl:flex fixed flex-col ml-20">
+      <div className="hidden xl:flex fixed flex-col ml-20 top-12">
         <Link to="/" className="mb-2">
           <img className="h-36 w-auto" src={logo} alt="View home page" />
         </Link>
