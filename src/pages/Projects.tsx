@@ -4,11 +4,18 @@ import Project from "../components/Project";
 
 const data = [
   {
+    title: "MDGO",
+    repoUrl: "https://github.com/brmscheiner/mdgo",
+    date: "2023+",
+    content:
+      "A simple CLI tool that lets you quickly run commands found in Markdown files.",
+  },
+  {
     title: "Subculture Creations",
     repoUrl: "https://github.com/brmscheiner/subculturecreations.com",
     date: "2022+",
     content:
-      "The code for this very website. The stack: Typescript, React, Tailwind, and Netlify.",
+      "The code for this website. Built using Typescript, React and Tailwind. Deployed via Netlify.",
   },
   {
     title: "Codex",
