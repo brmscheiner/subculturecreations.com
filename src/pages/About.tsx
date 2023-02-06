@@ -153,10 +153,8 @@ export default function About() {
           I am a software engineer and a web designer, so it felt weird not to have a site of my own. Plus I don't really maintain a social media presence, so I wanted a{" "}
           place to share my thoughts and creations.
         </p>
-
         <h3 className="font-bold text-lg my-2">More about Ben</h3>
         <Tabs items={tabItems} />
-
       </Card>
     </Page>
   );
