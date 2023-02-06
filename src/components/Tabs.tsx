@@ -14,7 +14,7 @@ export default function Tabs(props: { items: TabItem[] }) {
   const [activeItem, setActiveItem] = useState<TabItem>(items.find((item) => item.default) || items?.[0]);
   return (
     <>
-  <ul className="flex flex-wrap font-medium text-center border-b-2 border-black">
+  <ul className="flex flex-nowrap overflow-x-scroll	 font-medium text-center border-b-2 border-black">
       {items.map((item) => {  
         const active = item.label === activeItem.label;
         const classNames = active 

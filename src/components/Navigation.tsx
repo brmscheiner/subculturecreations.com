@@ -32,7 +32,7 @@ export default function Navigation() {
         <Link to="/" className="shrink-0">
           <img className="h-20 w-auto" src={logo} alt="View home page" />
         </Link>
-        <div className="flex flex-wrap justify-end space-x-4">
+        <div className="flex flex-col items-end">
           <Item label="About" url="/about" />
           {/* <Item label="Articles" url="/articles" /> */}
           <Item label="Photos" url="/photos" />
