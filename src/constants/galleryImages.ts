@@ -25,6 +25,7 @@ export interface GalleryImage {
   paths: Paths;
   sizes: Sizes;
   alt?: string;
+  stretch?: boolean;
 }
 
 export const galleryImages = mapValues(imageMetadata, (d): GalleryImage => {

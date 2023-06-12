@@ -1,4 +1,3 @@
-import React from "react";
 import Page from "../components/Page";
 import Project from "../components/Project";
 
@@ -15,7 +14,7 @@ const data = [
     repoUrl: "https://github.com/brmscheiner/subculturecreations.com",
     date: "2022+",
     content:
-      "The code for this website. Built using Typescript, React and Tailwind. Deployed via Netlify.",
+      "The code for this website. I built it using Typescript, React and Tailwind. I don't mind if you copy and paste the code for your own personal website.",
   },
   {
     title: "Codex",
@@ -29,14 +28,14 @@ const data = [
     infoUrl: "https://www.ui.com/wi-fi",
     date: "2019-2020",
     content:
-      "A web app used to configure WiFi networks. The app has millions of users and features many animations and visualizations.",
+      "A web app used to configure WiFi networks. The app is rich with animations and visualizations and serves millions of users.",
   },
   {
     title: "MP Studio",
     infoUrl: "https://motorizedprecision.com/mp-studio/",
     date: "2017-2018",
     content:
-      "An Electron app used to control the motion of robotic arms for use in commercials and movies.",
+      "An Electron app used to control the motion of robot arms for use in commercials and movies. In most cases, the role of the robot was to hold the camera, acting as a perfectly smooth and precise camera operator.",
   },
 ];
 

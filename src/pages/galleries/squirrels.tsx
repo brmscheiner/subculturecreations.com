@@ -33,6 +33,7 @@ const images = [
   {
     ...galleryImages["squirrels7.jpeg"],
     alt: "Colleen with Squiggles on her shoulder",
+    stretch: true,
   },
   {
     ...galleryImages["squirrels8.jpeg"],
@@ -45,6 +46,7 @@ const images = [
   {
     ...galleryImages["squirrels10.jpeg"],
     alt: "Ben with Squiggles on his shoulder",
+    stretch: true,
   },
   {
     ...galleryImages["squirrels11.jpg"],
@@ -86,7 +88,7 @@ const boardsConfig = {
     <>
       <p>
         One day I was out for a walk and a squirrel started to follow me. He was
-        persistent enough to follow me for at least two blocks and even cross
+        persistent enough to follow me for at two full blocks and fearless enough to cross
         the street. A cat noticed his strange behavior and attacked him. I
         shooed the cat away and took the squirrel home in a shoebox.
       </p>

@@ -19,7 +19,7 @@ const resizes = [
     key: "small",
     src: "./src/assets/galleries/originals/*",
     dist: "./src/assets/galleries/small",
-    maxPixels: 400,
+    maxPixels: 740,
   },
 ];
 

@@ -6,6 +6,7 @@ interface ContainedImageProps {
   width: number;
   height: number;
   stretch?: boolean;
+  twoColumn?: boolean;
   href?: string;
   alt?: string;
   ref?: React.MutableRefObject<HTMLImageElement>;
@@ -14,13 +15,16 @@ interface ContainedImageProps {
 
 const ContainedImage = React.forwardRef(
   (props: ContainedImageProps, ref: LegacyRef<HTMLImageElement>) => {
-    const { width, height, stretch, src, alt, href, onClick } = props;
+    const { width, height, stretch, twoColumn, src, alt, href, onClick } = props;
     const [loading, setLoading] = useState(true);
     const handleLoad = useCallback(() => setLoading(false), []);
 
+    const fullWidth = stretch || (twoColumn && (width > height));
+    const halfWidth = twoColumn && !fullWidth;
+
     const dimensionStyles = {
-      width: stretch ? "100%" : width,
-      height: stretch ? "unset" : height,
+      width: fullWidth ? "100%" : halfWidth ? "calc(50% - 0.25rem)" : width,
+      height: (stretch || twoColumn) ? "unset" : height,
       aspectRatio: stretch ? width / height : "unset",
     };
 

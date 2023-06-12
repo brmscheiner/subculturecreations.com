@@ -1,686 +1,686 @@
 {
-  "board1.jpeg": {
-    "filename": "board1.jpeg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 3880,
-        "height": 2923
-      },
-      "medium": {
-        "width": 1600,
-        "height": 1205
-      },
-      "small": {
-        "width": 400,
-        "height": 301
-      }
+    "board1.jpeg": {
+        "filename": "board1.jpeg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 3880,
+                "height": 2923
+            },
+            "medium": {
+                "width": 1600,
+                "height": 1205
+            },
+            "small": {
+                "width": 740,
+                "height": 557
+            }
+        }
+    },
+    "board2.jpeg": {
+        "filename": "board2.jpeg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4080,
+                "height": 3072
+            },
+            "medium": {
+                "width": 1600,
+                "height": 1205
+            },
+            "small": {
+                "width": 740,
+                "height": 557
+            }
+        }
+    },
+    "board3.jpeg": {
+        "filename": "board3.jpeg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4080,
+                "height": 3072
+            },
+            "medium": {
+                "width": 1600,
+                "height": 1205
+            },
+            "small": {
+                "width": 740,
+                "height": 557
+            }
+        }
+    },
+    "boardsAll.jpeg": {
+        "filename": "boardsAll.jpeg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 3072,
+                "height": 4080
+            },
+            "medium": {
+                "width": 1205,
+                "height": 1600
+            },
+            "small": {
+                "width": 557,
+                "height": 740
+            }
+        }
+    },
+    "boardsLandscape.jpeg": {
+        "filename": "boardsLandscape.jpeg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 3674,
+                "height": 2767
+            },
+            "medium": {
+                "width": 1600,
+                "height": 1205
+            },
+            "small": {
+                "width": 740,
+                "height": 557
+            }
+        }
+    },
+    "coastlines1.jpg": {
+        "filename": "coastlines1.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 1512,
+                "height": 2016
+            },
+            "medium": {
+                "width": 1200,
+                "height": 1600
+            },
+            "small": {
+                "width": 555,
+                "height": 740
+            }
+        }
+    },
+    "coastlines10.jpg": {
+        "filename": "coastlines10.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 1512,
+                "height": 2016
+            },
+            "medium": {
+                "width": 1200,
+                "height": 1600
+            },
+            "small": {
+                "width": 555,
+                "height": 740
+            }
+        }
+    },
+    "coastlines11.jpg": {
+        "filename": "coastlines11.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 1512,
+                "height": 2016
+            },
+            "medium": {
+                "width": 1200,
+                "height": 1600
+            },
+            "small": {
+                "width": 555,
+                "height": 740
+            }
+        }
+    },
+    "coastlines2.jpg": {
+        "filename": "coastlines2.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 1512,
+                "height": 2016
+            },
+            "medium": {
+                "width": 1200,
+                "height": 1600
+            },
+            "small": {
+                "width": 555,
+                "height": 740
+            }
+        }
+    },
+    "coastlines3.jpg": {
+        "filename": "coastlines3.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 1512,
+                "height": 2016
+            },
+            "medium": {
+                "width": 1200,
+                "height": 1600
+            },
+            "small": {
+                "width": 555,
+                "height": 740
+            }
+        }
+    },
+    "coastlines4.jpg": {
+        "filename": "coastlines4.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 1512,
+                "height": 2016
+            },
+            "medium": {
+                "width": 1200,
+                "height": 1600
+            },
+            "small": {
+                "width": 555,
+                "height": 740
+            }
+        }
+    },
+    "coastlines5.jpg": {
+        "filename": "coastlines5.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 1512,
+                "height": 2016
+            },
+            "medium": {
+                "width": 1200,
+                "height": 1600
+            },
+            "small": {
+                "width": 555,
+                "height": 740
+            }
+        }
+    },
+    "coastlines6.jpg": {
+        "filename": "coastlines6.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 1512,
+                "height": 2016
+            },
+            "medium": {
+                "width": 1200,
+                "height": 1600
+            },
+            "small": {
+                "width": 555,
+                "height": 740
+            }
+        }
+    },
+    "coastlines7.jpg": {
+        "filename": "coastlines7.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 1512,
+                "height": 2016
+            },
+            "medium": {
+                "width": 1200,
+                "height": 1600
+            },
+            "small": {
+                "width": 555,
+                "height": 740
+            }
+        }
+    },
+    "coastlines8.jpg": {
+        "filename": "coastlines8.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 1512,
+                "height": 2016
+            },
+            "medium": {
+                "width": 1200,
+                "height": 1600
+            },
+            "small": {
+                "width": 555,
+                "height": 740
+            }
+        }
+    },
+    "coastlines9.jpg": {
+        "filename": "coastlines9.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 1512,
+                "height": 2016
+            },
+            "medium": {
+                "width": 1200,
+                "height": 1600
+            },
+            "small": {
+                "width": 555,
+                "height": 740
+            }
+        }
+    },
+    "coastlinesLandscape.jpg": {
+        "filename": "coastlinesLandscape.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 1500,
+                "height": 1000
+            },
+            "medium": {
+                "width": 1600,
+                "height": 1067
+            },
+            "small": {
+                "width": 740,
+                "height": 493
+            }
+        }
+    },
+    "nook1.jpeg": {
+        "filename": "nook1.jpeg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4032,
+                "height": 3024
+            },
+            "medium": {
+                "width": 1600,
+                "height": 2133
+            },
+            "small": {
+                "width": 740,
+                "height": 987
+            }
+        }
+    },
+    "nook2.jpeg": {
+        "filename": "nook2.jpeg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4032,
+                "height": 3024
+            },
+            "medium": {
+                "width": 1600,
+                "height": 2133
+            },
+            "small": {
+                "width": 740,
+                "height": 987
+            }
+        }
+    },
+    "nook3.jpeg": {
+        "filename": "nook3.jpeg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4032,
+                "height": 3024
+            },
+            "medium": {
+                "width": 1600,
+                "height": 1200
+            },
+            "small": {
+                "width": 740,
+                "height": 555
+            }
+        }
+    },
+    "squirrels1.jpeg": {
+        "filename": "squirrels1.jpeg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4032,
+                "height": 3024
+            },
+            "medium": {
+                "width": 1600,
+                "height": 2133
+            },
+            "small": {
+                "width": 740,
+                "height": 987
+            }
+        }
+    },
+    "squirrels10.jpeg": {
+        "filename": "squirrels10.jpeg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 3264,
+                "height": 2448
+            },
+            "medium": {
+                "width": 1600,
+                "height": 2133
+            },
+            "small": {
+                "width": 740,
+                "height": 987
+            }
+        }
+    },
+    "squirrels11.jpg": {
+        "filename": "squirrels11.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 3264,
+                "height": 2448
+            },
+            "medium": {
+                "width": 1600,
+                "height": 1200
+            },
+            "small": {
+                "width": 740,
+                "height": 555
+            }
+        }
+    },
+    "squirrels12.jpeg": {
+        "filename": "squirrels12.jpeg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4032,
+                "height": 3024
+            },
+            "medium": {
+                "width": 1600,
+                "height": 2133
+            },
+            "small": {
+                "width": 740,
+                "height": 987
+            }
+        }
+    },
+    "squirrels13.jpeg": {
+        "filename": "squirrels13.jpeg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4032,
+                "height": 3024
+            },
+            "medium": {
+                "width": 1600,
+                "height": 2133
+            },
+            "small": {
+                "width": 740,
+                "height": 987
+            }
+        }
+    },
+    "squirrels14.jpg": {
+        "filename": "squirrels14.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 3024,
+                "height": 4032
+            },
+            "medium": {
+                "width": 1200,
+                "height": 1600
+            },
+            "small": {
+                "width": 555,
+                "height": 740
+            }
+        }
+    },
+    "squirrels15.jpeg": {
+        "filename": "squirrels15.jpeg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4032,
+                "height": 3024
+            },
+            "medium": {
+                "width": 1600,
+                "height": 2133
+            },
+            "small": {
+                "width": 740,
+                "height": 987
+            }
+        }
+    },
+    "squirrels16.jpeg": {
+        "filename": "squirrels16.jpeg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4032,
+                "height": 3024
+            },
+            "medium": {
+                "width": 1600,
+                "height": 2133
+            },
+            "small": {
+                "width": 740,
+                "height": 987
+            }
+        }
+    },
+    "squirrels17.jpeg": {
+        "filename": "squirrels17.jpeg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4032,
+                "height": 3024
+            },
+            "medium": {
+                "width": 1600,
+                "height": 2133
+            },
+            "small": {
+                "width": 740,
+                "height": 987
+            }
+        }
+    },
+    "squirrels2.jpeg": {
+        "filename": "squirrels2.jpeg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4032,
+                "height": 3024
+            },
+            "medium": {
+                "width": 1600,
+                "height": 2133
+            },
+            "small": {
+                "width": 740,
+                "height": 987
+            }
+        }
+    },
+    "squirrels3.jpeg": {
+        "filename": "squirrels3.jpeg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4032,
+                "height": 3024
+            },
+            "medium": {
+                "width": 1600,
+                "height": 1200
+            },
+            "small": {
+                "width": 740,
+                "height": 555
+            }
+        }
+    },
+    "squirrels4.jpeg": {
+        "filename": "squirrels4.jpeg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4032,
+                "height": 3024
+            },
+            "medium": {
+                "width": 1600,
+                "height": 2133
+            },
+            "small": {
+                "width": 740,
+                "height": 987
+            }
+        }
+    },
+    "squirrels5.jpeg": {
+        "filename": "squirrels5.jpeg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4032,
+                "height": 3024
+            },
+            "medium": {
+                "width": 1600,
+                "height": 2133
+            },
+            "small": {
+                "width": 740,
+                "height": 987
+            }
+        }
+    },
+    "squirrels6.jpeg": {
+        "filename": "squirrels6.jpeg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4032,
+                "height": 3024
+            },
+            "medium": {
+                "width": 1600,
+                "height": 1200
+            },
+            "small": {
+                "width": 740,
+                "height": 555
+            }
+        }
+    },
+    "squirrels7.jpeg": {
+        "filename": "squirrels7.jpeg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4032,
+                "height": 3024
+            },
+            "medium": {
+                "width": 1600,
+                "height": 2133
+            },
+            "small": {
+                "width": 740,
+                "height": 987
+            }
+        }
+    },
+    "squirrels8.jpeg": {
+        "filename": "squirrels8.jpeg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4032,
+                "height": 3024
+            },
+            "medium": {
+                "width": 1600,
+                "height": 1200
+            },
+            "small": {
+                "width": 740,
+                "height": 555
+            }
+        }
+    },
+    "squirrels9.jpeg": {
+        "filename": "squirrels9.jpeg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4032,
+                "height": 3024
+            },
+            "medium": {
+                "width": 1600,
+                "height": 1200
+            },
+            "small": {
+                "width": 740,
+                "height": 555
+            }
+        }
+    },
+    "squirrelsLandscape.jpeg": {
+        "filename": "squirrelsLandscape.jpeg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 3024,
+                "height": 1724
+            },
+            "medium": {
+                "width": 1600,
+                "height": 912
+            },
+            "small": {
+                "width": 740,
+                "height": 422
+            }
+        }
     }
-  },
-  "board2.jpeg": {
-    "filename": "board2.jpeg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 4080,
-        "height": 3072
-      },
-      "medium": {
-        "width": 1600,
-        "height": 1205
-      },
-      "small": {
-        "width": 400,
-        "height": 301
-      }
-    }
-  },
-  "board3.jpeg": {
-    "filename": "board3.jpeg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 4080,
-        "height": 3072
-      },
-      "medium": {
-        "width": 1600,
-        "height": 1205
-      },
-      "small": {
-        "width": 400,
-        "height": 301
-      }
-    }
-  },
-  "boardsAll.jpeg": {
-    "filename": "boardsAll.jpeg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 3072,
-        "height": 4080
-      },
-      "medium": {
-        "width": 1205,
-        "height": 1600
-      },
-      "small": {
-        "width": 301,
-        "height": 400
-      }
-    }
-  },
-  "boardsLandscape.jpeg": {
-    "filename": "boardsLandscape.jpeg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 3674,
-        "height": 2767
-      },
-      "medium": {
-        "width": 1600,
-        "height": 1205
-      },
-      "small": {
-        "width": 400,
-        "height": 301
-      }
-    }
-  },
-  "coastlines1.jpg": {
-    "filename": "coastlines1.jpg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 1512,
-        "height": 2016
-      },
-      "medium": {
-        "width": 1200,
-        "height": 1600
-      },
-      "small": {
-        "width": 300,
-        "height": 400
-      }
-    }
-  },
-  "coastlines10.jpg": {
-    "filename": "coastlines10.jpg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 1512,
-        "height": 2016
-      },
-      "medium": {
-        "width": 1200,
-        "height": 1600
-      },
-      "small": {
-        "width": 300,
-        "height": 400
-      }
-    }
-  },
-  "coastlines11.jpg": {
-    "filename": "coastlines11.jpg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 1512,
-        "height": 2016
-      },
-      "medium": {
-        "width": 1200,
-        "height": 1600
-      },
-      "small": {
-        "width": 300,
-        "height": 400
-      }
-    }
-  },
-  "coastlines2.jpg": {
-    "filename": "coastlines2.jpg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 1512,
-        "height": 2016
-      },
-      "medium": {
-        "width": 1200,
-        "height": 1600
-      },
-      "small": {
-        "width": 300,
-        "height": 400
-      }
-    }
-  },
-  "coastlines3.jpg": {
-    "filename": "coastlines3.jpg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 1512,
-        "height": 2016
-      },
-      "medium": {
-        "width": 1200,
-        "height": 1600
-      },
-      "small": {
-        "width": 300,
-        "height": 400
-      }
-    }
-  },
-  "coastlines4.jpg": {
-    "filename": "coastlines4.jpg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 1512,
-        "height": 2016
-      },
-      "medium": {
-        "width": 1200,
-        "height": 1600
-      },
-      "small": {
-        "width": 300,
-        "height": 400
-      }
-    }
-  },
-  "coastlines5.jpg": {
-    "filename": "coastlines5.jpg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 1512,
-        "height": 2016
-      },
-      "medium": {
-        "width": 1200,
-        "height": 1600
-      },
-      "small": {
-        "width": 300,
-        "height": 400
-      }
-    }
-  },
-  "coastlines6.jpg": {
-    "filename": "coastlines6.jpg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 1512,
-        "height": 2016
-      },
-      "medium": {
-        "width": 1200,
-        "height": 1600
-      },
-      "small": {
-        "width": 300,
-        "height": 400
-      }
-    }
-  },
-  "coastlines7.jpg": {
-    "filename": "coastlines7.jpg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 1512,
-        "height": 2016
-      },
-      "medium": {
-        "width": 1200,
-        "height": 1600
-      },
-      "small": {
-        "width": 300,
-        "height": 400
-      }
-    }
-  },
-  "coastlines8.jpg": {
-    "filename": "coastlines8.jpg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 1512,
-        "height": 2016
-      },
-      "medium": {
-        "width": 1200,
-        "height": 1600
-      },
-      "small": {
-        "width": 300,
-        "height": 400
-      }
-    }
-  },
-  "coastlines9.jpg": {
-    "filename": "coastlines9.jpg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 1512,
-        "height": 2016
-      },
-      "medium": {
-        "width": 1200,
-        "height": 1600
-      },
-      "small": {
-        "width": 300,
-        "height": 400
-      }
-    }
-  },
-  "coastlinesLandscape.jpg": {
-    "filename": "coastlinesLandscape.jpg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 1500,
-        "height": 1000
-      },
-      "medium": {
-        "width": 1600,
-        "height": 1067
-      },
-      "small": {
-        "width": 400,
-        "height": 267
-      }
-    }
-  },
-  "nook1.jpeg": {
-    "filename": "nook1.jpeg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 4032,
-        "height": 3024
-      },
-      "medium": {
-        "width": 1600,
-        "height": 2133
-      },
-      "small": {
-        "width": 400,
-        "height": 533
-      }
-    }
-  },
-  "nook2.jpeg": {
-    "filename": "nook2.jpeg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 4032,
-        "height": 3024
-      },
-      "medium": {
-        "width": 1600,
-        "height": 2133
-      },
-      "small": {
-        "width": 400,
-        "height": 533
-      }
-    }
-  },
-  "nook3.jpeg": {
-    "filename": "nook3.jpeg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 4032,
-        "height": 3024
-      },
-      "medium": {
-        "width": 1600,
-        "height": 1200
-      },
-      "small": {
-        "width": 400,
-        "height": 300
-      }
-    }
-  },
-  "squirrels1.jpeg": {
-    "filename": "squirrels1.jpeg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 4032,
-        "height": 3024
-      },
-      "medium": {
-        "width": 1600,
-        "height": 2133
-      },
-      "small": {
-        "width": 400,
-        "height": 533
-      }
-    }
-  },
-  "squirrels10.jpeg": {
-    "filename": "squirrels10.jpeg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 3264,
-        "height": 2448
-      },
-      "medium": {
-        "width": 1600,
-        "height": 2133
-      },
-      "small": {
-        "width": 400,
-        "height": 533
-      }
-    }
-  },
-  "squirrels11.jpg": {
-    "filename": "squirrels11.jpg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 3264,
-        "height": 2448
-      },
-      "medium": {
-        "width": 1600,
-        "height": 1200
-      },
-      "small": {
-        "width": 400,
-        "height": 300
-      }
-    }
-  },
-  "squirrels12.jpeg": {
-    "filename": "squirrels12.jpeg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 4032,
-        "height": 3024
-      },
-      "medium": {
-        "width": 1600,
-        "height": 2133
-      },
-      "small": {
-        "width": 400,
-        "height": 533
-      }
-    }
-  },
-  "squirrels13.jpeg": {
-    "filename": "squirrels13.jpeg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 4032,
-        "height": 3024
-      },
-      "medium": {
-        "width": 1600,
-        "height": 2133
-      },
-      "small": {
-        "width": 400,
-        "height": 533
-      }
-    }
-  },
-  "squirrels14.jpg": {
-    "filename": "squirrels14.jpg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 3024,
-        "height": 4032
-      },
-      "medium": {
-        "width": 1200,
-        "height": 1600
-      },
-      "small": {
-        "width": 300,
-        "height": 400
-      }
-    }
-  },
-  "squirrels15.jpeg": {
-    "filename": "squirrels15.jpeg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 4032,
-        "height": 3024
-      },
-      "medium": {
-        "width": 1600,
-        "height": 2133
-      },
-      "small": {
-        "width": 400,
-        "height": 533
-      }
-    }
-  },
-  "squirrels16.jpeg": {
-    "filename": "squirrels16.jpeg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 4032,
-        "height": 3024
-      },
-      "medium": {
-        "width": 1600,
-        "height": 2133
-      },
-      "small": {
-        "width": 400,
-        "height": 533
-      }
-    }
-  },
-  "squirrels17.jpeg": {
-    "filename": "squirrels17.jpeg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 4032,
-        "height": 3024
-      },
-      "medium": {
-        "width": 1600,
-        "height": 2133
-      },
-      "small": {
-        "width": 400,
-        "height": 533
-      }
-    }
-  },
-  "squirrels2.jpeg": {
-    "filename": "squirrels2.jpeg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 4032,
-        "height": 3024
-      },
-      "medium": {
-        "width": 1600,
-        "height": 2133
-      },
-      "small": {
-        "width": 400,
-        "height": 533
-      }
-    }
-  },
-  "squirrels3.jpeg": {
-    "filename": "squirrels3.jpeg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 4032,
-        "height": 3024
-      },
-      "medium": {
-        "width": 1600,
-        "height": 1200
-      },
-      "small": {
-        "width": 400,
-        "height": 300
-      }
-    }
-  },
-  "squirrels4.jpeg": {
-    "filename": "squirrels4.jpeg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 4032,
-        "height": 3024
-      },
-      "medium": {
-        "width": 1600,
-        "height": 2133
-      },
-      "small": {
-        "width": 400,
-        "height": 533
-      }
-    }
-  },
-  "squirrels5.jpeg": {
-    "filename": "squirrels5.jpeg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 4032,
-        "height": 3024
-      },
-      "medium": {
-        "width": 1600,
-        "height": 2133
-      },
-      "small": {
-        "width": 400,
-        "height": 533
-      }
-    }
-  },
-  "squirrels6.jpeg": {
-    "filename": "squirrels6.jpeg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 4032,
-        "height": 3024
-      },
-      "medium": {
-        "width": 1600,
-        "height": 1200
-      },
-      "small": {
-        "width": 400,
-        "height": 300
-      }
-    }
-  },
-  "squirrels7.jpeg": {
-    "filename": "squirrels7.jpeg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 4032,
-        "height": 3024
-      },
-      "medium": {
-        "width": 1600,
-        "height": 2133
-      },
-      "small": {
-        "width": 400,
-        "height": 533
-      }
-    }
-  },
-  "squirrels8.jpeg": {
-    "filename": "squirrels8.jpeg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 4032,
-        "height": 3024
-      },
-      "medium": {
-        "width": 1600,
-        "height": 1200
-      },
-      "small": {
-        "width": 400,
-        "height": 300
-      }
-    }
-  },
-  "squirrels9.jpeg": {
-    "filename": "squirrels9.jpeg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 4032,
-        "height": 3024
-      },
-      "medium": {
-        "width": 1600,
-        "height": 1200
-      },
-      "small": {
-        "width": 400,
-        "height": 300
-      }
-    }
-  },
-  "squirrelsLandscape.jpeg": {
-    "filename": "squirrelsLandscape.jpeg",
-    "format": "jpeg",
-    "sizes": {
-      "original": {
-        "width": 3024,
-        "height": 1724
-      },
-      "medium": {
-        "width": 1600,
-        "height": 912
-      },
-      "small": {
-        "width": 400,
-        "height": 228
-      }
-    }
-  }
 }

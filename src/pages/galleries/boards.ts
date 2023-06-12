@@ -21,6 +21,7 @@ const images = [
   {
     ...galleryImages["boardsAll.jpeg"],
     alt: "A collection of 5 handmade charcuterie boards",
+    stretch: true,
   },
 ];
 

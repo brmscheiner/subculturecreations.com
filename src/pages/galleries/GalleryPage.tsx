@@ -12,9 +12,9 @@ export default function GalleryPage(props: { data: Gallery }) {
   const { data } = props;
   return (
     <Page title={data.title}>
-      <div className="xl:ml-72 p-4 w-5xl">
+      <div className="p-4 max-w-3xl mx-auto">
         <h1 className="mt-2 text-4xl">{data.title}</h1>
-        <div className="my-3 max-w-3xl">
+        <div className="my-3">
           {typeof data.description === "string" ? (
             <p>{data.description}</p>
           ) : (
@@ -22,7 +22,7 @@ export default function GalleryPage(props: { data: Gallery }) {
           )}
         </div>
         <GridGallery id={data.path} withCaption>
-          <div className="flex flex-wrap gap-2 mb-4">
+          <div className="flex flex-wrap mb-4 gap-2">
             {data.images.map((image) => (
               <Item
                 key={image.filename}
@@ -36,6 +36,8 @@ export default function GalleryPage(props: { data: Gallery }) {
                   <ContainedImage
                     ref={ref as React.MutableRefObject<HTMLImageElement>}
                     onClick={open}
+                    twoColumn
+                    stretch={image?.stretch}
                     src={image.paths.small}
                     width={image.sizes.small.width}
                     height={image.sizes.small.height}
