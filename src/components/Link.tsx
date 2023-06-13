@@ -5,20 +5,23 @@ import { clickableText } from "../constants/compositeStyles";
 
 export default function Link(props: {
   href: string;
-  label: string;
+  className?: string;
+  label?: string;
   external?: boolean;
+  children?: React.ReactNode;
 }) {
-  const { href, label, external = false } = props;
+  const { className, href, label, children, external = false } = props;
+  const classes = className ? `${clickableText} ${className}` : clickableText;
   if (external) {
     return (
-      <a className={clickableText} href={href} target="_blank" rel="noreferrer">
-        {label}
+      <a className={classes} href={href} target="_blank" rel="noreferrer">
+        {label || children}
       </a>
     );
   }
   return (
-    <RouterLink className={clickableText} to={href}>
-      {label}
+    <RouterLink className={classes} to={href}>
+      {label || children}
     </RouterLink>
   );
 }

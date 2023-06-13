@@ -16,6 +16,9 @@ const tabItems: TabItem[] = [
         title="Experience"
         items={[
           {
+            text: "9 years of programming",
+          },
+          {
             text: "7 years of frontend development",
           },
           {
@@ -30,10 +33,7 @@ const tabItems: TabItem[] = [
         title="Languages"
         items={[
           {
-            text: "Typescript",
-          },
-          {
-            text: "Javascript",
+            text: "Typescript/Javascript",
           },
           {
             text: "HTML/CSS",
@@ -51,6 +51,9 @@ const tabItems: TabItem[] = [
           },
           {
             text: "Material-UI",
+          },
+          {
+            text: "Fluent",
           },
           {
             text: "d3.js",
@@ -72,18 +75,30 @@ const tabItems: TabItem[] = [
     return (
       <div style={{ minHeight: tabContentMinHeight }}>
       <List
+        title="Yes, please!"
         items={[
           {
-            text: "Working with non-profits, B Corps and local businesses",
+            text: "Working with artists, scientists and local businesses",
           },
           {
-            text: "More design work!",
+            text: "Ambitious data visualization and animation projects",
           },
           {
-            text: "Data visualization",
+            text: "Mission-driven organizations",
           },
         ]}
       />
+        <List
+          title="No thank you"
+          items={[
+            {
+              text: "Fintech (including crypto)",
+            },
+            {
+              text: "Advertising",
+            },
+          ]}
+        />
       </div>
     )
   } },
@@ -142,16 +157,13 @@ export default function About() {
   return (
     <Page title="About">
       <Card>
+        <h3 className="font-bold text-lg my-2">Hello, I'm Ben =)</h3>
+        <p className="mb-6">
+          I'm a software engineer and UX designer based in Portland, Oregon.
+        </p>
         <h3 className="font-bold text-lg my-2">Why Subculture Creations?</h3>
         <p className="mb-6">
-          Well, for one, <Link external href="https://www.benscheiner.com/" label="benscheiner.com" /> was taken by a different Ben (who admittedly seems like a pretty cool guy).{" "}
-          But as a lover of racquetball, ultimate frisbee, synthesizers, and so many other fringe activities, I wanted to pay homage to the subculture. I honestly believe that{" "}
-          subcultures are what make life interesting an drive humanity forward. The best ideas are usually found in the margins.
-        </p>
-        <h3 className="font-bold text-lg my-2">Why make a website in the first place?</h3>
-        <p className="mb-6">
-          I am a software engineer and a web designer, so it felt weird not to have a site of my own. Plus I don't really maintain a social media presence, so I wanted a{" "}
-          place to share my thoughts and creations.
+          As a lover of racquetball, synthesizers, ultimate frisbee, woodworking, and so many other fringe activities, I pass my time hopping from one subculture to the next. I sincerely believe that the best and brightest people are found in the margins.
         </p>
         <h3 className="font-bold text-lg my-2">More about Ben</h3>
         <Tabs items={tabItems} />
