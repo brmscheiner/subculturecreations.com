@@ -89,7 +89,7 @@ const tabItems: TabItem[] = [
         ]}
       />
         <List
-          title="No thank you"
+          title="No, thank you"
           items={[
             {
               text: "Fintech (including crypto)",
@@ -163,7 +163,7 @@ export default function About() {
         </p>
         <h3 className="font-bold text-lg my-2">Why Subculture Creations?</h3>
         <p className="mb-6">
-          As a lover of racquetball, synthesizers, ultimate frisbee, woodworking, and so many other fringe activities, I pass my time hopping from one subculture to the next. I sincerely believe that the best and brightest people are found in the margins.
+          As a lover of racquetball, synthesizers, ultimate frisbee, woodworking, and so many other fringe activities, I spend my days hopping from one subculture to the next. I sincerely believe that the best and brightest people can be found in the margins.
         </p>
         <h3 className="font-bold text-lg my-2">More about Ben</h3>
         <Tabs items={tabItems} />
