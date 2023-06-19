@@ -305,6 +305,222 @@
             }
         }
     },
+    "epoxy1.jpg": {
+        "filename": "epoxy1.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 6144,
+                "height": 4080
+            },
+            "medium": {
+                "width": 1600,
+                "height": 1063
+            },
+            "small": {
+                "width": 740,
+                "height": 491
+            }
+        }
+    },
+    "epoxy10.jpg": {
+        "filename": "epoxy10.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4080,
+                "height": 3072
+            },
+            "medium": {
+                "width": 1600,
+                "height": 1205
+            },
+            "small": {
+                "width": 740,
+                "height": 557
+            }
+        }
+    },
+    "epoxy11.jpg": {
+        "filename": "epoxy11.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4080,
+                "height": 3072
+            },
+            "medium": {
+                "width": 1600,
+                "height": 1205
+            },
+            "small": {
+                "width": 740,
+                "height": 557
+            }
+        }
+    },
+    "epoxy12.jpg": {
+        "filename": "epoxy12.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4080,
+                "height": 3072
+            },
+            "medium": {
+                "width": 1600,
+                "height": 1205
+            },
+            "small": {
+                "width": 740,
+                "height": 557
+            }
+        }
+    },
+    "epoxy2.jpg": {
+        "filename": "epoxy2.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4080,
+                "height": 3072
+            },
+            "medium": {
+                "width": 1600,
+                "height": 1205
+            },
+            "small": {
+                "width": 740,
+                "height": 557
+            }
+        }
+    },
+    "epoxy3.jpg": {
+        "filename": "epoxy3.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4080,
+                "height": 3072
+            },
+            "medium": {
+                "width": 1600,
+                "height": 1205
+            },
+            "small": {
+                "width": 740,
+                "height": 557
+            }
+        }
+    },
+    "epoxy4.jpg": {
+        "filename": "epoxy4.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 3072,
+                "height": 4080
+            },
+            "medium": {
+                "width": 1205,
+                "height": 1600
+            },
+            "small": {
+                "width": 557,
+                "height": 740
+            }
+        }
+    },
+    "epoxy5.jpg": {
+        "filename": "epoxy5.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4080,
+                "height": 3072
+            },
+            "medium": {
+                "width": 1600,
+                "height": 1205
+            },
+            "small": {
+                "width": 740,
+                "height": 557
+            }
+        }
+    },
+    "epoxy6.jpg": {
+        "filename": "epoxy6.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4080,
+                "height": 3072
+            },
+            "medium": {
+                "width": 1600,
+                "height": 1205
+            },
+            "small": {
+                "width": 740,
+                "height": 557
+            }
+        }
+    },
+    "epoxy7.jpg": {
+        "filename": "epoxy7.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4080,
+                "height": 3072
+            },
+            "medium": {
+                "width": 1600,
+                "height": 1205
+            },
+            "small": {
+                "width": 740,
+                "height": 557
+            }
+        }
+    },
+    "epoxy8.jpg": {
+        "filename": "epoxy8.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4080,
+                "height": 3072
+            },
+            "medium": {
+                "width": 1600,
+                "height": 1205
+            },
+            "small": {
+                "width": 740,
+                "height": 557
+            }
+        }
+    },
+    "epoxy9.jpg": {
+        "filename": "epoxy9.jpg",
+        "format": "jpeg",
+        "sizes": {
+            "original": {
+                "width": 4080,
+                "height": 3072
+            },
+            "medium": {
+                "width": 1600,
+                "height": 1205
+            },
+            "small": {
+                "width": 740,
+                "height": 557
+            }
+        }
+    },
     "nook1.jpeg": {
         "filename": "nook1.jpeg",
         "format": "jpeg",
