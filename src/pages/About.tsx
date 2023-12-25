@@ -75,7 +75,7 @@ const tabItems: TabItem[] = [
     return (
       <div style={{ minHeight: tabContentMinHeight }}>
       <List
-        title="Yes, please!"
+        title="Yes please!"
         items={[
           {
             text: "Working with artists, scientists and local businesses",
@@ -89,7 +89,7 @@ const tabItems: TabItem[] = [
         ]}
       />
         <List
-          title="No, thank you"
+          title="No thank you!"
           items={[
             {
               text: "Fintech (including crypto)",
@@ -157,13 +157,13 @@ export default function About() {
   return (
     <Page title="About">
       <Card>
-        <h3 className="font-bold text-lg my-2">Hello, I'm Ben =)</h3>
+        <h3 className="font-bold text-lg my-2">Hi, I'm Ben =)</h3>
         <p className="mb-6">
-          I'm a software engineer and UX designer based in Portland, Oregon.
+          I am a software engineer and UX designer based in Portland, Oregon.
         </p>
         <h3 className="font-bold text-lg my-2">Why Subculture Creations?</h3>
         <p className="mb-6">
-          As a lover of racquetball, synthesizers, ultimate frisbee, woodworking, and so many other fringe activities, I spend my days hopping from one subculture to the next. I sincerely believe that the best and brightest people can be found in the margins.
+          As a lover of racquetball, synthesizers, ultimate frisbee, woodworking, and so many other fringe things, I spend my days hopping from one subculture to the next. I sincerely believe that the best and brightest people can be found in the margins.
         </p>
         <h3 className="font-bold text-lg my-2">More about Ben</h3>
         <Tabs items={tabItems} />

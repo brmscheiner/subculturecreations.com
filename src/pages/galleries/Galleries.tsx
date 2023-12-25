@@ -9,9 +9,10 @@ import nook from "./nook";
 import boards from "./boards";
 import squirrels from "./squirrels";
 import epoxy from './epoxy';
+import galapagos from './galapagos';
 import { Gallery } from "./types";
 
-export const galleries = [epoxy, coastlines, boards, nook, squirrels];
+export const galleries = [galapagos, epoxy, coastlines, boards, nook, squirrels];
 
 function GalleryStub(props: Gallery) {
   const { title, subtitle, exemplar, path } = props;
