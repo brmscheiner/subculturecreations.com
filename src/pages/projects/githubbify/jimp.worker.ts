@@ -27,11 +27,19 @@ ctx.addEventListener("message", async (e) => {
     type: "quantized",
     base64: await image.getBase64("image/png"),
   });
-  const matrix = [];
+  const matrix = Array(resizeHeight).fill(Array(resizeWidth));
   const colorMap: ColorMap = {};
   let i = 0;
   // Encode image as pixel matrix with each color mapped to an index between 0 and 4
   // TODO replace with scan
+  // image.scan((x, y) => {
+  //   const pixel = image.getPixelColor(x, y);
+  //   if (!colorMap[pixel]) {
+  //     colorMap[pixel] = i;
+  //     i += 1;
+  //   }
+  //   matrix[y][x] = colorMap[pixel];
+  // });
   for (let y = 0; y < resizeHeight; y++) {
     const row = [];
     for (let x = 0; x < resizeWidth; x++) {

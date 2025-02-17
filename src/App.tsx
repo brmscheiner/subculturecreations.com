@@ -7,7 +7,7 @@ import Home from './pages/home/Home';
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Error from "./pages/Error";
-import Githubbify from "./pages/projects/Githubbify";
+import Githubbify from "./pages/projects/githubbify/Githubbify";
 import Galleries from "./pages/galleries/Galleries";
 import { galleries } from "./pages/galleries/Galleries";
 import GalleryPage from "./pages/galleries/GalleryPage";
