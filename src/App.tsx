@@ -1,13 +1,14 @@
 import { createBrowserRouter, Outlet, RouterProvider, ScrollRestoration } from "react-router-dom";
 
 import "./App.css";
+import { routes } from "./constants/routes";
 // import Articles from './pages/Articles';
 import Home from './pages/home/Home';
 import Projects from "./pages/Projects";
-import Galleries from "./pages/galleries/Galleries";
 import About from "./pages/About";
 import Error from "./pages/Error";
-import { routes } from "./constants/routes";
+import Githubbify from "./pages/projects/Githubbify";
+import Galleries from "./pages/galleries/Galleries";
 import { galleries } from "./pages/galleries/Galleries";
 import GalleryPage from "./pages/galleries/GalleryPage";
 
@@ -38,6 +39,11 @@ const router = createBrowserRouter([
       //   element: <Articles />,
       //   errorElement: <Error />,
       // },
+      {
+        path: routes.githubbify,
+        element: <Githubbify />,
+        errorElement: <Error />,
+      },
       {
         path: routes.projects,
         element: <Projects />,
