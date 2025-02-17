@@ -1,13 +1,32 @@
 
-import { useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import Page from "../../components/Page";
 import Card from "../../components/Card";
 
+const readDataUrlFromFile = async (file: File) => new Promise((resolve) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+        console.log(0)
+        resolve(reader.result as string)
+    };
+    reader.readAsDataURL(file);
+})
+
+const readArrayBufferFromFile = async (file: File,) => new Promise((resolve) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+        console.log(1)
+        resolve(reader.result as ArrayBuffer)
+    };
+    reader.readAsArrayBuffer(file);
+})
+
 interface FileUploadProps {
-    selectedFile: File | null
-    setSelectedFile: React.Dispatch<React.SetStateAction<File | null>>
+    sendArrayBuffer: (b: ArrayBuffer) => void
+    setImageUrl: React.Dispatch<React.SetStateAction<string | null>>
 }
-const FileUpload = ({ selectedFile, setSelectedFile }: FileUploadProps) => {
+const FileUpload = ({ sendArrayBuffer, setImageUrl }: FileUploadProps) => {
+  const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [error, setError] = useState('');
   const [isDragging, setIsDragging] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -17,14 +36,21 @@ const FileUpload = ({ selectedFile, setSelectedFile }: FileUploadProps) => {
     validateAndSetFile(file);
   };
 
-  const validateAndSetFile = (file: File | null) => {
+  const validateAndSetFile = async (file: File | null) => {
     setError('');
     if (!file) return;
     if (file.size > 5 * 1024 * 1024) {
       setError('File size must be less than 5MB');
-      return;
     }
-    setSelectedFile(file);
+    if (file.type.startsWith('image/')) {
+        setSelectedFile(file)
+        const imageUrl = await readDataUrlFromFile(file)
+        setImageUrl(imageUrl as string)
+        const arrayBuffer = await readArrayBufferFromFile(file)
+        sendArrayBuffer(arrayBuffer as ArrayBuffer)
+    } else {
+        setError(`Githubbify only supports images, uploaded file has type ${file.type}`)
+    }
   };
 
   const handleDragOver = (event: React.DragEvent<HTMLDivElement>) => {
@@ -78,7 +104,7 @@ const FileUpload = ({ selectedFile, setSelectedFile }: FileUploadProps) => {
         />
                 
         <p className="text-sm text-gray-600">
-          Drag and drop your an image here, or{' '}
+          Drag and drop an image here, or{' '}
           <span className="text-blue-500 hover:text-blue-600 cursor-pointer">
             browse
           </span>
@@ -105,13 +131,42 @@ const FileUpload = ({ selectedFile, setSelectedFile }: FileUploadProps) => {
 };
 
 export default function Githubbify() {
-    const [selectedFile, setSelectedFile] = useState<File | null>(null);
+    const workerRef = useRef<Worker | null>(null);
 
+  useEffect(() => {
+    const worker = new Worker(new URL("./jimp.worker.ts", import.meta.url), {
+        type: "module",
+    })
+    workerRef.current = worker
+    worker.addEventListener("message", (e) => {
+        if (e.data.type === 'resized') setResizedImgUrl(e.data.base64);
+        if (e.data.type === 'quantized') setQuantizedImgUrl(e.data.base64);
+      });
+    return () => {
+      workerRef.current?.terminate();
+    };
+  }, []);
+
+    const [originalImgUrl, setOriginalImgUrl] = useState<string | null>(null);
+    const [resizedImgUrl, setResizedImgUrl] = useState<string | null>(null);
+    const [quantizedImgUrl, setQuantizedImgUrl] = useState<string | null>(null);
+    const sendArrayBuffer = (buffer: ArrayBuffer) => {
+        if (workerRef.current) workerRef.current.postMessage({ image: buffer })
+    }
     return (
       <Page title="Githubbify">
         <Card>
           <h3 className="font-bold text-lg my-2">Githubbify</h3>
-          <FileUpload selectedFile={selectedFile} setSelectedFile={setSelectedFile} />
+          <FileUpload sendArrayBuffer={sendArrayBuffer} setImageUrl={setOriginalImgUrl}  />
+          {originalImgUrl && (
+            <img className='w-full h-auto' src={originalImgUrl} alt='original uploaded image' />
+          )}
+          {resizedImgUrl && (
+            <img style={{ imageRendering: 'pixelated' }} className='w-full h-auto' src={resizedImgUrl} alt='resized image' />
+          )}
+          {quantizedImgUrl && (
+            <img style={{ imageRendering: 'pixelated' }} className='w-full h-auto' src={quantizedImgUrl} alt='resized image' />
+          )}
         </Card>
       </Page>
     );
