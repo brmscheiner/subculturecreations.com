@@ -6,7 +6,6 @@ import Card from "../../components/Card";
 const readDataUrlFromFile = async (file: File) => new Promise((resolve) => {
     const reader = new FileReader();
     reader.onload = () => {
-        console.log(0)
         resolve(reader.result as string)
     };
     reader.readAsDataURL(file);
@@ -15,7 +14,6 @@ const readDataUrlFromFile = async (file: File) => new Promise((resolve) => {
 const readArrayBufferFromFile = async (file: File,) => new Promise((resolve) => {
     const reader = new FileReader();
     reader.onload = () => {
-        console.log(1)
         resolve(reader.result as ArrayBuffer)
     };
     reader.readAsArrayBuffer(file);
@@ -130,6 +128,17 @@ const FileUpload = ({ sendArrayBuffer, setImageUrl }: FileUploadProps) => {
   );
 };
 
+// Even though I requested 5 colors with quantize, I got 6. The first pixel appears to be a
+// different color for some reason
+const colorMap = {
+  0: '#ebedf0',
+  1:  '#ebedf0',
+  2: 'rgb(155, 233, 168)',
+  3: 'rgb(64, 196, 99)',
+  4: 'rgb(48, 161, 78)',
+  5: 'rgb(33, 110, 57)',
+}
+type Matrix = number[][]
 export default function Githubbify() {
     const workerRef = useRef<Worker | null>(null);
 
@@ -141,6 +150,7 @@ export default function Githubbify() {
     worker.addEventListener("message", (e) => {
         if (e.data.type === 'resized') setResizedImgUrl(e.data.base64);
         if (e.data.type === 'quantized') setQuantizedImgUrl(e.data.base64);
+        if (e.data.type === 'matrix') setMatrix(e.data.matrix)
       });
     return () => {
       workerRef.current?.terminate();
@@ -150,6 +160,7 @@ export default function Githubbify() {
     const [originalImgUrl, setOriginalImgUrl] = useState<string | null>(null);
     const [resizedImgUrl, setResizedImgUrl] = useState<string | null>(null);
     const [quantizedImgUrl, setQuantizedImgUrl] = useState<string | null>(null);
+    const [matrix, setMatrix] = useState<Matrix | null>(null);
     const sendArrayBuffer = (buffer: ArrayBuffer) => {
         if (workerRef.current) workerRef.current.postMessage({ image: buffer })
     }
@@ -166,6 +177,17 @@ export default function Githubbify() {
           )}
           {quantizedImgUrl && (
             <img style={{ imageRendering: 'pixelated' }} className='w-full h-auto' src={quantizedImgUrl} alt='resized image' />
+          )}
+          {matrix && (
+            <div className='flex flex-col gap-[3px]'>
+                {matrix.map((row, y) => (
+                <div key={`row-${y}`} className='flex gap-[3px]'>
+                    {row.map((cell, x) => (
+                        <div key={`cell-${x}-${y}`} className='w-[10px] h-[10px] rounded-[2px] outline-[rgba(27, 31, 35, 0.06)] outline-offset-[-1px]' style={{ background: colorMap[cell] }} />
+                    ))}
+                </div>
+            ))}
+            </div>
           )}
         </Card>
       </Page>
