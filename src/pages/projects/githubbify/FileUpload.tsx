@@ -4,24 +4,24 @@ import { clickableText } from '../../../constants/compositeStyles';
 const readDataUrlFromFile = async (file: File) => new Promise((resolve) => {
     const reader = new FileReader();
     reader.onload = () => {
-        resolve(reader.result as string)
+        resolve(reader.result)
     };
     reader.readAsDataURL(file);
 })
 
-const readArrayBufferFromFile = async (file: File,) => new Promise((resolve) => {
+const readArrayBufferFromFile = async (file: File) => new Promise((resolve) => {
     const reader = new FileReader();
     reader.onload = () => {
-        resolve(reader.result as ArrayBuffer)
+        resolve(reader.result)
     };
     reader.readAsArrayBuffer(file);
 })
 
 interface FileUploadProps {
-    sendArrayBuffer: (b: ArrayBuffer) => void
-    setImageUrl: React.Dispatch<React.SetStateAction<string | null>>
+  onDataUrl: (dataUrl: string) => void
+  onArrayBuffer: (arrayBuffer: ArrayBuffer) => void
 }
-export const FileUpload = ({ sendArrayBuffer, setImageUrl }: FileUploadProps) => {
+export const FileUpload = ({ onDataUrl, onArrayBuffer }: FileUploadProps) => {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [error, setError] = useState('');
   const [isDragging, setIsDragging] = useState(false);
@@ -35,15 +35,17 @@ export const FileUpload = ({ sendArrayBuffer, setImageUrl }: FileUploadProps) =>
   const validateAndSetFile = async (file: File | null) => {
     setError('');
     if (!file) return;
-    if (file.size > 5 * 1024 * 1024) {
-      setError('File size must be less than 5MB');
+    if (file.size > 10 * 1024 * 1024) {
+      setError('File size must be less than 10MB');
     }
-    if (file.type.startsWith('image/')) {
+    if (file.type === 'image/webp') {
+      setError(`At this time .webp images are not supported, sorry!`)
+    } else if (file.type.startsWith('image/')) {
         setSelectedFile(file)
         const imageUrl = await readDataUrlFromFile(file)
-        setImageUrl(imageUrl as string)
+        onDataUrl(imageUrl as string)
         const arrayBuffer = await readArrayBufferFromFile(file)
-        sendArrayBuffer(arrayBuffer as ArrayBuffer)
+        onArrayBuffer(arrayBuffer as ArrayBuffer)
     } else {
         setError(`Githubbify only supports images, uploaded file has type "${file.type}"`)
     }
@@ -77,14 +79,16 @@ export const FileUpload = ({ sendArrayBuffer, setImageUrl }: FileUploadProps) =>
     }
   };
 
-  const onReset = () => setSelectedFile(null)
+  const onTryAnother = () => {
+    setSelectedFile(null)
+  }
 
   if (selectedFile) return (
-    <div className='w-full flex justify-between align-center'>
-        <p>
+    <div className='w-full flex justify-between align-center flex-wrap'>
+        <p className='break-all'>
             {selectedFile.name}
     </p>
-    <button className={clickableText} onClick={onReset}>
+    <button className={clickableText} onClick={onTryAnother}>
         Try another image
     </button>
     </div>
