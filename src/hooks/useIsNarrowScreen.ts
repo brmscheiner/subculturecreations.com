@@ -1,23 +1,23 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from 'react'
 
-const mediaQueryList = window.matchMedia("(max-width: 760px)");
+const mediaQueryList = window.matchMedia('(max-width: 760px)')
 
 export default function (): boolean {
-  const [smallScreen, setSmallScreen] = useState(mediaQueryList.matches);
+  const [smallScreen, setSmallScreen] = useState(mediaQueryList.matches)
   useEffect(() => {
     function onChange() {
       if (mediaQueryList.matches && !smallScreen) {
-        setSmallScreen(true);
+        setSmallScreen(true)
       } else if (!mediaQueryList.matches && smallScreen) {
-        setSmallScreen(false);
+        setSmallScreen(false)
       }
     }
 
-    mediaQueryList.addEventListener("change", onChange);
+    mediaQueryList.addEventListener('change', onChange)
 
     return () => {
-      mediaQueryList.removeEventListener("change", onChange);
-    };
-  }, []);
-  return smallScreen;
+      mediaQueryList.removeEventListener('change', onChange)
+    }
+  }, [])
+  return smallScreen
 }
