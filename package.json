@@ -26,7 +26,8 @@
     "prebuild": "npm run generate-images",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+    "lint": "npx eslint . --fix",
+    "format": "prettier --ignore-path .gitignore . --write",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -48,11 +49,19 @@
     ]
   },
   "devDependencies": {
+    "@eslint/js": "^9.20.0",
     "@types/lodash": "^4.14.186",
     "autoprefixer": "^10.4.12",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-react": "^7.37.4",
+    "globals": "^15.15.0",
     "postcss": "^8.4.16",
-    "prettier": "^2.7.1",
+    "prettier": "^3.0.3",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "prettier-plugin-tailwindcss": "^0.5.6",
     "sharp": "^0.31.1",
-    "tailwindcss": "^3.1.8"
+    "tailwindcss": "^3.1.8",
+    "typescript-eslint": "^8.24.1"
   }
 }

@@ -1,1 +1,1 @@
-export const clickableText = "underline underline-offset-2";
+export const clickableText = 'underline underline-offset-2'

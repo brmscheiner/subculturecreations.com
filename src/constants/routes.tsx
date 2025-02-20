@@ -1,6 +1,6 @@
 export const routes = {
-  articles: "articles",
-  projects: "projects",
-  about: "about",
-  galleries: "photos",
-};
+  articles: 'articles',
+  projects: 'projects',
+  about: 'about',
+  galleries: 'photos',
+}

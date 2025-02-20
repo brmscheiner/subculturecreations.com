@@ -1,8 +1,8 @@
 # subculturecreations.com
 
-Ben Scheiner's personal website.
+My personal website.
 
-## Running locally
+## local development
 
 ```
 npm install
@@ -10,8 +10,8 @@ npm run generate-images
 npm start
 ```
 
-I am using npm version 8.11.0 and node 16.15.1.
+Last tested with npm 10.9.2 and node 22.13.1.
 
-## Stack
+## stack
 
-I used the TS version of [Create React App](https://github.com/facebook/create-react-app), [Tailwind](https://tailwindcss.com/), and [react-photoswipe-gallery](https://github.com/dromru/react-photoswipe-gallery). There is also a simple script that uses [sharp](https://sharp.pixelplumbing.com/) to generate thumbnails and provide image metadata to the UI.
+Uses the typescript version of [Create React App](https://github.com/facebook/create-react-app), [Tailwind](https://tailwindcss.com/), and [react-photoswipe-gallery](https://github.com/dromru/react-photoswipe-gallery). There is also a [sharp](https://sharp.pixelplumbing.com/) script used to generate thumbnail images.
