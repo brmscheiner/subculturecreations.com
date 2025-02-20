@@ -1,9 +1,11 @@
 import { Jimp } from 'jimp'
 
-// This is exactly what the Jimp documentation says to do, but it feels dirty
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-// eslint-disable-next-line no-restricted-globals
+// This is what the Jimp documentation says to do, but it feels dirty
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable no-restricted-globals */
 const ctx: Worker = self as any
+/* eslint-enable @typescript-eslint/no-explicit-any */
+/* eslint-enable no-restricted-globals */
 
 const colorCount = 5 // Github chart has 5 colors
 const resizeWidth = 40

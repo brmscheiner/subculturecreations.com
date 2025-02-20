@@ -22,9 +22,15 @@ const readArrayBufferFromFile = async (file: File) =>
 interface FileUploadProps {
   onDataUrl: (dataUrl: string) => void
   onArrayBuffer: (arrayBuffer: ArrayBuffer) => void
+  selectedFile: File | null
+  setSelectedFile: React.Dispatch<React.SetStateAction<File | null>>
 }
-export const FileUpload = ({ onDataUrl, onArrayBuffer }: FileUploadProps) => {
-  const [selectedFile, setSelectedFile] = useState<File | null>(null)
+export const FileUpload = ({
+  onDataUrl,
+  onArrayBuffer,
+  selectedFile,
+  setSelectedFile,
+}: FileUploadProps) => {
   const [error, setError] = useState('')
   const [isDragging, setIsDragging] = useState(false)
   const fileInputRef = useRef<HTMLInputElement>(null)
@@ -89,8 +95,7 @@ export const FileUpload = ({ onDataUrl, onArrayBuffer }: FileUploadProps) => {
 
   if (selectedFile)
     return (
-      <div className='align-center flex w-full flex-wrap justify-between'>
-        <p className='break-all'>{selectedFile.name}</p>
+      <div className='flex w-full justify-center rounded-lg border-2 border-dashed p-2'>
         <button className={clickableText} onClick={onTryAnother}>
           Try another image
         </button>

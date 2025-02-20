@@ -43,6 +43,7 @@ export default function Githubbify() {
     }
   }, [])
 
+  const [selectedFile, setSelectedFile] = useState<File | null>(null)
   const [originalImgUrl, setOriginalImgUrl] = useState<string | null>(null)
   const [resizedImgUrl, setResizedImgUrl] = useState<string | null>(null)
   const [quantizedImgUrl, setQuantizedImgUrl] = useState<string | null>(null)
@@ -87,37 +88,50 @@ export default function Githubbify() {
           src={githubChartExample}
           alt='Example Github contributions chart'
         />
-        <FileUpload onDataUrl={onDataUrl} onArrayBuffer={onArrayBuffer} />
-        {showImageUrl && (
+        <FileUpload
+          onDataUrl={onDataUrl}
+          onArrayBuffer={onArrayBuffer}
+          selectedFile={selectedFile}
+          setSelectedFile={setSelectedFile}
+        />
+        {showImageUrl && selectedFile && (
           <div>
-            <img
-              className='h-[60vh] max-h-full w-auto'
-              style={{ imageRendering: 'pixelated' }}
-              src={showImageUrl}
-              alt={getImageAltFromMode(imageMode)}
-            />
-            <div className='text-sm'>
-              <InlineButton
-                text='Original'
-                onClick={updateImageMode('original')}
-              />{' '}
-              |{' '}
-              <InlineButton
-                text='Resized'
-                onClick={updateImageMode('resized')}
-              />{' '}
-              |{' '}
-              <InlineButton
-                text='Quantized'
-                onClick={updateImageMode('quantized')}
-              />
+            <p className='overflow-hidden text-ellipsis text-center font-bold'>
+              {selectedFile.name}
+            </p>
+            <div className='w-full rounded-lg border-2 border-zinc-300 bg-zinc-200 p-4 sm:px-8 sm:pt-8 sm:pb-4'>
+              <div className='flex flex-col items-center'>
+                <img
+                  className='h-[60vh] max-h-full w-auto border-2 border-zinc-300 object-contain'
+                  style={{ imageRendering: 'pixelated' }}
+                  src={showImageUrl}
+                  alt={getImageAltFromMode(imageMode)}
+                />
+                <div className='mt-2 text-sm'>
+                  <InlineButton
+                    text='Original'
+                    onClick={updateImageMode('original')}
+                  />{' '}
+                  |{' '}
+                  <InlineButton
+                    text='Resized'
+                    onClick={updateImageMode('resized')}
+                  />{' '}
+                  |{' '}
+                  <InlineButton
+                    text='Quantized'
+                    onClick={updateImageMode('quantized')}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         )}
-        {matrix && (
+
+        {matrix && selectedFile && (
           <div>
             <p className='text-center font-bold'>Githubbified image</p>
-            <div className='w-full rounded-lg border-2 border-zinc-300 bg-zinc-200 p-8'>
+            <div className='w-full overflow-scroll rounded-lg border-2 border-zinc-300 bg-zinc-200 p-4 sm:p-8'>
               <div className='mx-auto flex w-fit flex-col gap-[3px] rounded-lg bg-white p-1'>
                 {matrix.map((row, y) => (
                   <div key={`row-${y}`} className='flex gap-[3px]'>
