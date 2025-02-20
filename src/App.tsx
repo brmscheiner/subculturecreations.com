@@ -14,6 +14,7 @@ import Galleries, { galleries } from './pages/galleries/Galleries'
 import GalleryPage from './pages/galleries/GalleryPage'
 import Home from './pages/home/Home'
 import Projects from './pages/Projects'
+import Githubbify from './pages/projects/githubbify/Githubbify'
 
 const galleryRoutes = galleries.map(g => ({
   path: `${routes.galleries}/${g.path}`,
@@ -42,6 +43,11 @@ const router = createBrowserRouter([
       //   element: <Articles />,
       //   errorElement: <Error />,
       // },
+      {
+        path: routes.githubbify,
+        element: <Githubbify />,
+        errorElement: <Error />,
+      },
       {
         path: routes.projects,
         element: <Projects />,

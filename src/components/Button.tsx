@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { clickableText } from '../constants/compositeStyles'
 
 export enum ButtonColors {
   Blue = '#3F8CFF',
@@ -16,6 +17,11 @@ interface ButtonBaseProps {
 interface ButtonLinkProps extends ButtonBaseProps {
   href: string
   external?: boolean
+}
+
+interface InlineButtonProps {
+  text: string
+  onClick?: () => void
 }
 
 function ButtonBase(props: ButtonBaseProps) {
@@ -44,6 +50,19 @@ export function ButtonLink(props: ButtonLinkProps) {
     <Link to={href}>
       <ButtonBase {...rest} />
     </Link>
+  )
+}
+
+export function InlineButton(props: InlineButtonProps) {
+  const { onClick, text } = props
+  return (
+    <span
+      className={onClick ? clickableText : undefined}
+      onClick={onClick}
+      role='button'
+    >
+      {text}
+    </span>
   )
 }
 
