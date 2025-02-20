@@ -1,14 +1,33 @@
 import { ButtonColors, ButtonLink } from './Button'
 import Card from './Card'
 
-export default function Project(props: {
+const labelMap = {
+  hosted: 'View project',
+  info: 'More info',
+  code: 'View code',
+}
+const colorMap = {
+  hosted: ButtonColors.Green,
+  info: ButtonColors.Purple,
+  code: ButtonColors.Blue,
+}
+
+export interface ProjectProps {
   title: string
   date?: string
-  repoUrl?: string
-  infoUrl?: string
+  url: string
+  type: 'code' | 'info' | 'hosted'
   content: string
-}) {
-  const { title, date, repoUrl, infoUrl, content } = props
+  external: boolean
+}
+export function Project({
+  title,
+  date,
+  url,
+  type,
+  content,
+  external,
+}: ProjectProps) {
   return (
     <Card>
       <div className='flex flex-wrap items-end justify-between'>
@@ -17,23 +36,12 @@ export default function Project(props: {
         </p>
         <div>{date}</div>
       </div>
-
-      {repoUrl && (
-        <ButtonLink
-          external
-          href={repoUrl}
-          color={ButtonColors.Purple}
-          label='View code'
-        />
-      )}
-      {infoUrl && (
-        <ButtonLink
-          external
-          href={infoUrl}
-          color={ButtonColors.Blue}
-          label='More info'
-        />
-      )}
+      <ButtonLink
+        external={external}
+        href={url}
+        color={colorMap[type]}
+        label={labelMap[type]}
+      />
       <p className='mt-2'>{content}</p>
     </Card>
   )
