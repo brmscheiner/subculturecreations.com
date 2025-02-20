@@ -1,22 +1,21 @@
-import React from "react";
-import useDocumentTitle from "../hooks/useDocumentTitle";
-import Article from "../components/Article";
+import Article from '../components/Article'
+import useDocumentTitle from '../hooks/useDocumentTitle'
 
 const data = [
   {
-    title: "Hey",
-    subtitle: "Sup",
-    content: "Ok",
+    title: 'Hey',
+    subtitle: 'Sup',
+    content: 'Ok',
   },
-];
+]
 
 export default function Articles() {
-  useDocumentTitle("Articles", true);
+  useDocumentTitle('Articles', true)
   return (
     <>
-      {data.map((datum) => (
+      {data.map(datum => (
         <Article key={datum.title} {...datum} />
       ))}
     </>
-  );
+  )
 }

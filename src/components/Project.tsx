@@ -1,24 +1,21 @@
-import React from "react";
-import Card from "./Card";
-import { ButtonLink, ButtonColors } from "./Button";
+import { ButtonColors, ButtonLink } from './Button'
+import Card from './Card'
 
 export default function Project(props: {
-  title: string;
-  date?: string;
-  repoUrl?: string;
-  infoUrl?: string;
-  content: string;
+  title: string
+  date?: string
+  repoUrl?: string
+  infoUrl?: string
+  content: string
 }) {
-  const { title, date, repoUrl, infoUrl, content } = props;
+  const { title, date, repoUrl, infoUrl, content } = props
   return (
     <Card>
-      <div className="flex flex-wrap justify-between items-end">
-       <p className="text-2xl mb-0.5" style={{ overflowWrap: "anywhere" }}>
+      <div className='flex flex-wrap items-end justify-between'>
+        <p className='mb-0.5 text-2xl' style={{ overflowWrap: 'anywhere' }}>
           {title}
         </p>
-        <div>
-          {date}
-        </div>
+        <div>{date}</div>
       </div>
 
       {repoUrl && (
@@ -26,7 +23,7 @@ export default function Project(props: {
           external
           href={repoUrl}
           color={ButtonColors.Purple}
-          label="View code"
+          label='View code'
         />
       )}
       {infoUrl && (
@@ -34,10 +31,10 @@ export default function Project(props: {
           external
           href={infoUrl}
           color={ButtonColors.Blue}
-          label="More info"
+          label='More info'
         />
       )}
-      <p className="mt-2">{content}</p>
+      <p className='mt-2'>{content}</p>
     </Card>
-  );
+  )
 }

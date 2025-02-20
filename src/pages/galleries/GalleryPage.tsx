@@ -1,29 +1,29 @@
-import React from "react";
-import "photoswipe/dist/photoswipe.css";
-import { Gallery as GridGallery, Item } from "react-photoswipe-gallery";
+import 'photoswipe/dist/photoswipe.css'
+import React from 'react'
+import { Gallery as GridGallery, Item } from 'react-photoswipe-gallery'
 
-import { routes } from "../../constants/routes";
-import { ButtonLink, ButtonColors } from "../../components/Button";
-import ContainedImage from "../../components/ContainedImage";
-import Page from "../../components/Page";
-import { Gallery } from "./types";
+import { ButtonColors, ButtonLink } from '../../components/Button'
+import ContainedImage from '../../components/ContainedImage'
+import Page from '../../components/Page'
+import { routes } from '../../constants/routes'
+import { Gallery } from './types'
 
 export default function GalleryPage(props: { data: Gallery }) {
-  const { data } = props;
+  const { data } = props
   return (
     <Page title={data.title}>
-      <div className="p-4 max-w-3xl mx-auto">
-        <h1 className="mt-2 text-4xl">{data.title}</h1>
-        <div className="my-3">
-          {typeof data.description === "string" ? (
+      <div className='mx-auto max-w-3xl p-4'>
+        <h1 className='mt-2 text-4xl'>{data.title}</h1>
+        <div className='my-3'>
+          {typeof data.description === 'string' ? (
             <p>{data.description}</p>
           ) : (
             data.description
           )}
         </div>
         <GridGallery id={data.path} withCaption>
-          <div className="flex flex-wrap mb-4 gap-2">
-            {data.images.map((image) => (
+          <div className='mb-4 flex flex-wrap gap-2'>
+            {data.images.map(image => (
               <Item
                 key={image.filename}
                 original={image.paths.medium}
@@ -51,9 +51,9 @@ export default function GalleryPage(props: { data: Gallery }) {
         <ButtonLink
           color={ButtonColors.Black}
           href={`/${routes.galleries}`}
-          label="Back to all photos"
+          label='Back to all photos'
         />
       </div>
     </Page>
-  );
+  )
 }
