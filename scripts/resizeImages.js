@@ -1,9 +1,12 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 /* Adapted from https://ryanccn.dev/posts/respimg-11ty-sharp */
 
+/* eslint-disable no-undef */
 const fs = require('fs')
 const glob = require('glob')
 const path = require('path')
 const sharp = require('sharp')
+/* eslint-enable no-undef */
 
 const outputPath = './src/imageMetadata.json'
 const outputFiles = {}

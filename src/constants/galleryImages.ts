@@ -1,5 +1,6 @@
+// require is required here for dynamic imports =)
+/* eslint-disable @typescript-eslint/no-require-imports */
 import mapValues from 'lodash/mapValues'
-
 import imageMetadata from '../imageMetadata.json'
 
 interface Dimensions {
